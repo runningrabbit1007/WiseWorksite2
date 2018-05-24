@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/corners_dialog_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="5dp">
+
+        <!--<ImageView
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/dialog_delete_image"/>-->
+
+        <TextView
+            android:id="@+id/title"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请输入密码"
+            android:textColor="@color/text_first_color"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <View
+        style="@style/gray_line"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="提现"
+        android:textColor="@color/text_first_color"
+        android:textSize="@dimen/dialog_msg_tv_size"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="￥ 23456415.00"
+        android:textColor="@color/text_first_color"
+        android:textSize="20sp"/>
+
+
+    <EditText
+        android:id="@+id/mEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:textSize="@dimen/dialog_msg_tv_size"/>
+
+
+    <View style="@style/gray_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="15dp"
+            android:text="@string/ased_cancel"
+            android:textSize="@dimen/dialog_msg_btn_size"
+            android:textColor="@color/text_main_color" />
+
+        <View
+            android:id="@+id/middle_line"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/sure"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="15dp"
+            android:textSize="@dimen/dialog_msg_btn_size"
+            android:text="@string/ased_confirm"
+            android:textColor="@color/text_main_color" />
+    </LinearLayout>
+</LinearLayout>

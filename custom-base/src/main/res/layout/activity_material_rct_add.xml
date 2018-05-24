@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_hinder_danger_detail_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sx.common_base.activity.project_maneger.HinderDangerDetailAddActivity">
+
+    <include
+        layout="@layout/inc_common_top_bar"/>
+
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                style="@style/gray_line_7"/>
+
+            <!--供应商-->
+            <LinearLayout
+                style="@style/linear_height"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9.48dp"
+                    android:text="供应商"
+                    android:textColor="@color/c333333"
+                    android:textSize="@dimen/sp15" />
+
+                <EditText
+                    style="@style/width_weight"
+                    android:background="@null"
+                    android:hint="请输入"
+                    android:padding="5dp"
+                    android:textColor="@color/publish_text_color"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <View
+                style="@style/gray_line"/>
+
+
+            <!--材料名称-->
+            <LinearLayout
+                style="@style/linear_height"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9.48dp"
+                    android:text="材料名称"
+                    android:textColor="@color/c333333"
+                    android:textSize="@dimen/sp15" />
+
+                <EditText
+                    style="@style/width_weight"
+                    android:background="@null"
+                    android:hint="请输入"
+                    android:padding="5dp"
+                    android:textColor="@color/publish_text_color"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <View
+                style="@style/gray_line"/>
+
+            <!--车牌号-->
+            <LinearLayout
+                style="@style/linear_height"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9.48dp"
+                    android:text="车牌号"
+                    android:textColor="@color/c333333"
+                    android:textSize="@dimen/sp15" />
+
+                <EditText
+                    style="@style/width_weight"
+                    android:background="@null"
+                    android:hint="请输入"
+                    android:padding="5dp"
+                    android:textColor="@color/publish_text_color"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <View
+                style="@style/gray_line"/>
+
+
+            <!--货物数量-->
+            <LinearLayout
+                style="@style/linear_height"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9.48dp"
+                    android:text="货物数量"
+                    android:textColor="@color/c333333"
+                    android:textSize="@dimen/sp15" />
+
+                <EditText
+                    style="@style/width_weight"
+                    android:background="@null"
+                    android:hint="请输入"
+                    android:padding="5dp"
+                    android:textColor="@color/publish_text_color"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <View
+                style="@style/gray_line"/>
+
+            <!--发货日期-->
+            <LinearLayout
+                style="@style/linear_height"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9.48dp"
+                    android:text="发货日期"
+                    android:textColor="@color/c333333"
+                    android:textSize="@dimen/sp15" />
+
+                <EditText
+                    style="@style/width_weight"
+                    android:background="@null"
+                    android:hint="请选择"
+                    android:padding="5dp"
+                    android:textColor="@color/publish_text_color"
+                    android:textSize="@dimen/sp15" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_5"
+                android:background="@color/background_color"
+                android:textSize="@dimen/content_third_title_size"
+                android:textColor="@color/text_third_color"
+                android:text="备注"/>
+
+
+            <LinearLayout
+                android:layout_height="@dimen/dp_100"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical">
+
+                <EditText
+                    android:gravity="start"
+                    android:textColor="@color/text_first_color"
+                    android:textSize="@dimen/sp15"
+                    android:background="@null"
+                    android:id="@+id/detail_adress"
+                    android:padding="@dimen/dp_10"
+                    android:hint="备注内容……"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxHeight="@dimen/dp_100"/>
+
+            </LinearLayout>
+
+            <View style="@style/gray_line" />
+
+
+            <com.sx.common_base.view.ImplantGridView
+                android:id="@+id/image_list"
+                style="@style/width_match_height_wrap"
+                android:background="@color/white"
+                android:horizontalSpacing="5dp"
+                android:numColumns="4"
+                android:padding="10dp"
+                android:scrollbars="none"
+                android:verticalSpacing="5dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

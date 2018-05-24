@@ -1,0 +1,142 @@
+//更目录应用了这个gradle脚本文件，所以在rootProject的ext中会有一下定义的数据，这些数据在二级工程中可以简单引用（compiler.source）或者精确引用（rootProject.compiler.source）
+/*ext.compiler = [
+        source           : String.valueOf(gradle.sourceCompatibility),
+        target           : String.valueOf(gradle.targetCompatibility),
+        compileSdkVersion: 25,
+        buildToolsVersion: "25.0.2",
+        minSdkVersion    : 15,
+        targetSdkVersion : 25,
+        supportVersion   : "25.2.0"
+]*/
+/*ext.appVersion = [
+        //versionCode从100开始递增
+        versionCode: 100,
+        versionName: 'v1.0.0-beta.0'
+]*/
+ext.deps = [
+        supportv4         : "com.android.support:support-v4:$SUPPORT_VERSION",
+        supportv7         : "com.android.support:appcompat-v7:$SUPPORT_VERSION",
+        supportFragment   : "com.android.support:support-fragment:$SUPPORT_VERSION",
+        supportCoreUi     : "com.android.support:support-core-ui:$SUPPORT_VERSION",
+        supportCoreUtils  : "com.android.support:support-core-utils:$SUPPORT_VERSION",
+        supportMediaCompat: "com.android.support:support-media-compat:$SUPPORT_VERSION",
+
+        supportAnnotations: "com.android.support:support-annotations:$SUPPORT_VERSION",
+
+        design            : "com.android.support:design:$SUPPORT_VERSION",
+        cardview             : "com.android.support:cardview-v7:$SUPPORT_VERSION",
+        //recyclerview
+        recyclerview         : "com.android.support:recyclerview-v7:$SUPPORT_VERSION",
+
+        constraint        : "com.android.support.constraint:constraint-layout:$CONSTRAINT_VERSION",
+        //张涛的本地crash
+        crash             : "com.kymjs.core:crash:$VERSION_CORECRASH",
+        //代码生成工具
+        javaPoet          : "com.squareup:javapoet:$VERSION_JAVAPOET",
+        //张涛的common包
+        kymjsCommon       : "com.kymjs.core:common:$VERSION_CORECOMMON",
+        //打包资源arr
+        shellRes          : "com.maowo:shellres:$VERSION_SHELLRES",
+        //引导页
+        appintro             : "com.github.paolorotolo:appintro:$VERSION_APPINTRO",
+        //动态permission
+        permission           : "com.yanzhenjie:permission:$VERSION_PERMISSION",
+
+        //打印
+        logger               : "com.github.tianzhijiexian:logger:$VERSION_LOGGER",
+        //打印辅助依赖timber
+        timber               : "com.jakewharton.timber:timber:$VERSION_TIMBER",
+        //Gson
+        gson                 : "com.google.code.gson:gson:$VERSION_GSON",
+        //okhttputils
+        okhttputils          : "com.zhy:okhttputils:$VERSION_OKHTTPUTILS",
+
+
+        //butterknife注解框架
+        butterknife          : "com.jakewharton:butterknife:$VERSION_BUTTERKNIFE_COMPILER",
+        butterknifeCompiler  : "com.jakewharton:butterknife-compiler:$VERSION_BUTTERKNIFE_COMPILER",
+        butterknifePlugin    : "com.jakewharton:butterknife-gradle-plugin:$VERSION_BUTTERKNIFE_PLUGIN",
+
+        //Glide图片加载
+        glide                : "com.github.bumptech.glide:glide:$VERSION_GLIDE",
+        okhttp3integration   : "com.github.bumptech.glide:okhttp3-integration:$VERSION_OKHTTP3INTEGRATION",
+
+        //CommonAdapter库
+        commonAdapter        : "com.github.tianzhijiexian:CommonAdapter:$VERSION_COMMONADAPTER",
+        //CommonAdapter库
+        eventbus        : "org.greenrobot:eventbus:$VERSION_EVENTBUS",
+
+        //下载依赖库
+        filedownloader       : "com.liulishuo.filedownloader:library:$VERSION_FILEDOWNLOADER",
+
+//        //商品轮询页
+        goodCoverflow        : "com.github.crosswall:Android-Coverflow:release-v1.0.3",
+
+        //页面指示器
+        navigationtabstrip   : "com.github.devlight.navigationtabstrip:navigationtabstrip:$VERSION_NAVIGATIONTABSTRIP",
+
+        //详情下一页布局
+        view_core            : "com.lzy.widget:view-core:0.2.1",
+
+        //开源动画库
+        nineoldandroids      : "com.nineoldandroids:library:2.4.0",
+
+        //MVCHelper核心类库
+        MVCHelper            : "com.shizhefei:MVCHelper-Library:1.0.6",
+
+        MVCHelperSwipeRefresh: "com.shizhefei:MVCHelper-SwipeRefresh:1.0.6",
+
+        // Test dependencies
+        junit                : "junit:junit:4.12",
+
+        //httpcore
+        httpcore             : "org.apache.httpcomponents:httpcore:4.4.1",
+        httpclient           : "org.apache.httpcomponents:httpclient:4.5",
+
+        //九宫格图片
+        ninegridimageview    : "com.jaeger.ninegridimageview:library:1.0.2",
+
+        //极光推送
+        jpush                : "cn.jiguang.sdk:jpush:$VERSION_JPUSH",
+        jcore                : "cn.jiguang.sdk:jcore:$VERSION_JCORE",
+
+        //引导页
+        appintro             : "com.github.paolorotolo:appintro:4.1.0",
+
+        //选择器
+        wheelPicker          : "cn.aigestudio.wheelpicker:WheelPicker:1.1.2",
+
+        //时间选择器
+        timePicker           : "com.jzxiang.pickerview:TimePickerDialog:1.0.1",
+
+        //图片预览
+        imagezoom            : "liji.library.dev:imagezoom:1.2.1",
+
+        //
+        coverflow            : "com.github.moondroid.coverflow:library:1.0",
+        // 友盟统计
+        umengAnalytics       : "com.umeng.analytics:analytics:$VERSION_ANALYTICS",
+        //录像
+        materialCamera       : "com.afollestad:material-camera:0.4.4",
+        //greenDao
+        greenDao             : "org.greenrobot:greendao:$VERSION_GREENDAO",
+        //greenDao upgrade
+        greenDaoUpgrade      : "com.github.yuweiguocn:GreenDaoUpgradeHelper:$VERSION_GREENDAO_UPGRADE",
+
+        //toolsfinal
+        toolsfinal           : "cn.finalteam:toolsfinal:1.1.4",
+
+        swipeRecyclerview    : "com.yanzhenjie:recyclerview-swipe:1.0.4",
+
+        multidex             : "com.android.support:multidex:$VERSION_MULTIDEX",
+
+        //timelineview
+        timelineview         : "com.github.alorma:timelineview:2.3.0",
+        //导入框架
+        jsoup                : "org.jsoup:jsoup:1.10.1",
+        //微信支付
+//        wechatPay            : "com.tencent.mm.opensdk:wechat-sdk-android-with-mta:1.1.6",
+        //rxgalleryfinal 相册
+        xrefreshview            : "com.huxq17.xrefreshview:xrefreshview:3.6.9",
+        rxgalleryfinal            : "cn.finalteam.rxgalleryfinal:library:1.0.9"
+]

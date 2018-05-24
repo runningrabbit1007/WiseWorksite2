@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/project_list_item"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="项目名称：1号工地"
+            android:textColor="@color/text_first_color"
+            android:textSize="@dimen/content_first_title_size"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="管理工地 》"
+            android:textColor="@color/text_red_color"
+            android:textSize="@dimen/content_second_title_size"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/createTimeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开工时间：2018-01-13"
+            android:textColor="@color/text_first_color"
+            android:textSize="@dimen/content_second_title_size"
+            />
+
+        <TextView
+            android:id="@+id/areaTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="建筑面积：401612平方米"
+            android:layout_toRightOf="@id/createTimeTv"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textColor="@color/text_first_color"
+            android:textSize="@dimen/content_second_title_size"
+            />
+
+        <TextView
+            android:id="@+id/companyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="建筑单位：宜春市人民政府"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/text_first_color"
+            android:layout_below="@+id/createTimeTv"
+            android:textSize="@dimen/content_second_title_size"
+            />
+
+        <TextView
+            android:id="@+id/superviseTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="监管单位：宜春市人民政府"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/text_first_color"
+            android:layout_below="@+id/companyTv"
+            android:textSize="@dimen/content_second_title_size"
+            />
+
+
+    </RelativeLayout>
+
+    <View
+        style="@style/gray_line_10"/>
+
+
+</LinearLayout>

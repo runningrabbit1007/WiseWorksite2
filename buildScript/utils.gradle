@@ -1,0 +1,106 @@
+import groovy.util.slurpersupport.GPathResult
+import groovy.xml.XmlUtil
+
+def copyConfig(String resource){ //写JSON数据示例
+    String path = rootProject.findProject(':shell').getProjectDir().getAbsolutePath()+'/src/main/assets/config.json'
+    println path
+    def file = new File(path)
+
+    if (file.exists())
+        file.delete()
+
+    def printWriter = file.newPrintWriter() //
+
+    printWriter.write(new String(resource.getBytes('utf-8')))
+
+    printWriter.flush()
+    printWriter.close()
+}
+
+
+//获取时间戳
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMdd')
+    return formattedDate
+}
+
+
+//写一个xml示例
+def writeXml() {
+    def out = new StringWriter()
+    def xml = new groovy.xml.MarkupBuilder(out)
+    //构造一段xml如同构造一个java对象
+    //groovy引擎在找不到name方法，address方法时，自动识别为添加元素
+    xml.person {
+        name(type: 'berdy')
+        address('上海')
+        friends {
+            for (i in 1..10)
+                friend i
+        }
+    }
+    println out.toString()
+
+    def file = new File(rootDir.absolutePath + File.separator + 'shell/src/main/assets/self.xml');
+    if (file.exists()) {//如果文件不存在则创建一个文件
+        file.mkdirs();
+    }
+
+    def xmlString = "<?xml version='1.0' encoding='UTF-8'?>\n";
+    byte[] str = (xmlString + out.toString()).getBytes('utf-8')
+    def s = new String(str);
+    file.write(s);
+}
+
+//更新一个xml示例
+def upgradeShareSDk(String path){
+    GPathResult gPathResult = new XmlSlurper().parse(path)
+
+    File file = new File(path)
+    def printWriter = file.newPrintWriter()
+
+    println "before " + gPathResult.ShareSDK.@AppKey
+
+    gPathResult.ShareSDK.@AppKey = gradle.THIRD_SHARE_APPKEY
+    gPathResult.QQ.@AppId = gradle.THIRD_SHARE_QQ_APPID
+    gPathResult.QQ.@AppKey = gradle.THIRD_SHARE_QQ_APPKEY
+    gPathResult.SinaWeibo.@AppKey = gradle.THIRD_SHARE_WEIBO_APPKEY
+    gPathResult.SinaWeibo.@AppSecret = gradle.THIRD_SHARE_WEIBO_APPSECRET
+    gPathResult.Wechat.@AppId = gradle.THIRD_SHARE_WEIXIN_APPID
+    gPathResult.Wechat.@AppSecret = gradle.THIRD_SHARE_WEIXIN_APPSECRET
+
+    println "after " + XmlUtil.serialize(gPathResult)
+    XmlUtil.serialize(gPathResult, printWriter)
+}
+
+def getConfigPath(){
+    return rootDir.absolutePath + File.separator + "buildScript/initialization.json"
+}
+
+def getExtrasPath(){
+    return rootDir.absolutePath + File.separator + "buildScript/extras.gradle"
+}
+
+def getLibPath(){
+    return rootDir.absolutePath + File.separator + "buildScript/lib.gradle"
+}
+
+def getReleasePath(){
+    return rootDir.absolutePath + File.separator + "buildScript/release.gradle"
+}
+
+def getParsePath(){
+    return rootDir.absolutePath + File.separator + "buildScript/parseConfig.gradle"
+}
+
+
+ext {
+    getDate = this.&getDate
+    upgradeShareSDk = this.&upgradeShareSDk
+    getConfigPath = this.&getConfigPath
+    getExtrasPath = this.&getExtrasPath
+    getLibPath = this.&getLibPath
+//    getReleasePath = this.&getReleasePath
+    getParsePath = this.&getParsePath
+}

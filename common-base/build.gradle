@@ -1,0 +1,24 @@
+apply from: getLibPath
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile deps.supportv7
+    compile deps.recyclerview
+
+    compile deps.commonAdapter
+    compile deps.glide
+    compile deps.okhttp3integration
+    //okhttputils
+    compile deps.okhttputils
+    // eventbus
+    compile deps.eventbus
+
+    //注解框架
+    compile deps.butterknife
+
+    compile deps.multidex
+
+    compile project(path: ':common-util')
+
+    compile 'me.yokeyword:fragmentation:1.1.1'
+}

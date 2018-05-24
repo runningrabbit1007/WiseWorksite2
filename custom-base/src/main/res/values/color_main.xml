@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 应用主色 -->
+    <color name="text_main_color">@color/F87622</color>
+
+    <!-- 背景主色 -->
+    <color name="background_main_color">@color/F3F7F8</color>
+
+</resources>

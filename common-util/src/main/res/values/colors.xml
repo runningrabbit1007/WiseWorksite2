@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <!--<color name="cFFC971">#ffc971</color>-->
+    <!--<color name="ccdcccb">#cdcccb</color>-->
+    <!--<color name="c494949">#494949</color>-->
+    <!--<color name="c282828">#282828</color>-->
+    <!--<color name="cFF7A5F">#ff7a5f</color>-->
+    <!--<color name="cFFA56F">#FFA56F</color>-->
+    <!--<color name="cFF5F3A">#ff5f3a</color>-->
+    <!--<color name="cA0A0A0">#a0a0a0</color>-->
+    <!--<color name="cBBBBBB">#bbbbbb</color>-->
+    <!--<color name="cE97156">#e97156</color>-->
+    <!--<color name="cE15244">#e15244</color>-->
+    <!--<color name="cEF825A">#ef825a</color>-->
+    <!--<color name="cFB5341">#fb5341</color>-->
+    <!--<color name="cFEFEFE">#fefefe</color>-->
+    <!--<color name="cFA5241">#fa5241</color>-->
+    <!--<color name="cFFFFFF">#ffffff</color>-->
+    <!--<color name="cF0F0F0">#f0f0f0</color>-->
+    <!--<color name="cE0E0E0">#e0e0e0</color>-->
+    <!--<color name="cAFAFAF">#afafaf</color>-->
+    <!--<color name="cCCCCCC">#cccccc</color>-->
+    <!--<color name="cFAFAFA">#fafafa</color>-->
+    <!--<color name="cF4F4F4">#F4F4F4</color>-->
+    <!--<color name="c888888">#888888</color>-->
+    <!--<color name="cF8F8F8">#f8f8f8</color>-->
+    <!--<color name="cE9EAEC">#e9eaec</color>-->
+
+    <!--<color name="cF5F5F5">#f5f5f5</color>-->
+    <!--<color name="cFF916F">#ff916f</color>-->
+    <!--<color name="cDEDEDE">#dedede</color>-->
+    <!--<color name="c6FB3F7">#6fb3f7</color>-->
+    <!--<color name="cE5E5E5">#e5e5e5</color>-->
+    <!--<color name="c8CD68C">#8CD68C</color>-->
+    <!--<color name="cF2F2F2">#f2f2f2</color>-->
+    <!--<color name="c4DD865">#4DD865</color>-->
+    <!--<color name="cFF7D7D">#ff7d7d</color>-->
+    <!--<color name="cEFEFEF">#efefef</color>-->
+    <!--<color name="cD8D8D8">#D8D8D8</color>-->
+    <!--<color name="cDBDBDB">#DBDBDB</color>-->
+    <color name="c000000">#000000</color>
+    <!--<color name="cf7f7f7">#F7F7F7</color>-->
+    <color name="ca1a1a1">#a1a1a1</color>
+    <color name="transport">#00000000</color>
+    <!--<color name="cbcbcbc">#bcbcbc</color>-->
+    <!--<color name="c007AFF">#007AFF</color>-->
+    <!--<color name="cD9421F">#D9421F</color>-->
+    <!--<color name="cF1F1F1">#F1F1F1</color>-->
+    <!--<color name="c4793E0">#4793e0</color>-->
+    <!--<color name="cFDA976">#FDA976</color>-->
+    <!--<color name="cF8F7F7">#F8F7F7</color>-->
+    <!--<color name="cFAC05F">#FAC05F</color>-->
+    <!--<color name="cFABF5F">#FABF5F</color>-->
+    <!--<color name="cDFDFDF">#DFDFDF</color>-->
+    <!--<color name="cFDAA24">#FDAA24</color>-->
+    <!--<color name="c76C372">#76C372</color>-->
+    <!--<color name="cc7c7c7">#c7c7c7</color>-->
+    <!--<color name="c898989">#898989</color>-->
+    <!--<color name="cF9B547">#F9B547</color>-->
+    <!--<color name="cFEB88D">#FEB88D</color>-->
+
+    <!--<color name="cF2F3F4">#F2F3F4</color>-->
+    <!--<color name="cFF4600">#ff4600</color>-->
+    <color name="cDCDCDC">#DCDCDC</color>
+
+    <color name="cDADADA">#Dadada</color>
+    <!--<color name="cE5E6E7">#e5e6e7</color>-->
+
+    <!--&lt;!&ndash;todo 黑色百分之三十&ndash;&gt;-->
+    <!--<color name="c000000_30">#4c000000</color>-->
+    <!--<color name="c000000_70">#AF000000</color>-->
+
+
+    <!--<color name="cF9F9F9">#F9F9F9</color>-->
+    <!--<color name="cB2B2B2">#b2b2b2</color>-->
+    <!--<color name="cEAEBED">#eaebed</color>-->
+    <!--<color name="c8E8E93">#8e8e93</color>-->
+    <!--<color name="c292929">#292929</color>-->
+    <!--<color name="cAAAAAA">#aaaaaa</color>-->
+    <!--<color name="c5A5A5A">#5A5A5A</color>-->
+    <!--<color name="cD0D0D0">#D0D0D0</color>-->
+    <!--<color name="cFFB53C">#FFB53C</color>-->
+    <!--<color name="c858585">#858585</color>-->
+    <!--<color name="cFBB749">#fbb749</color>-->
+    <!--<color name="c59BE59">#59be59</color>-->
+    <!--<color name="cFFB770">#ffb770</color>-->
+    <!--<color name="cECECEC">#ececec</color>-->
+    <!--<color name="cF6C16B">#f6c16b</color>-->
+    <!--<color name="cEAEAEA">#eaeaea</color>-->
+
+    <!--<color name="c909090">#909090</color>-->
+    <!--<color name="c323232">#323232</color>-->
+    <!--<color name="cFDF7E5">#FDF7E5</color>-->
+    <color name="c3F3F3F">#333333</color>
+    <color name="c959595">#959595</color>
+    <!--<color name="c532D00">#532D00</color>-->
+    <!--<color name="cff4600">#ff4600</color>-->
+    <color name="publish_text_color">@color/c333333</color>
+
+    <!--&lt;!&ndash; 无色 &ndash;&gt;-->
+    <!--<color name="transparent">#9000</color>-->
+
+    <!--&lt;!&ndash; 白色 &ndash;&gt;-->
+    <!--<color name="white">#FFFFFF</color>-->
+
+    <!--&lt;!&ndash; 一级黑色 &ndash;&gt;-->
+    <!--<color name="black">#121212</color>-->
+
+    <!--&lt;!&ndash; 主色 &ndash;&gt;-->
+    <!--<color name="main_color">#24cfa2</color>-->
+
+    <!--&lt;!&ndash; 次灰色 &ndash;&gt;-->
+    <!--<color name="medium_digrey">#666666</color>-->
+
+    <!--&lt;!&ndash; 深灰色 &ndash;&gt;-->
+    <!--<color name="main_digrey"> #999999</color>-->
+
+    <color name="cFF7200">#ff7200</color>
+    <color name="c2E90FF">#2E90FF</color>
+
+    <color name="c1884FF">#1884FF</color>
+    <color name="cF5F5F5">#efefef</color>
+    <color name="cEDEDED">#ededed</color>
+    <color name="c333333">#333333</color>
+    <color name="c666666">#666666</color>
+    <color name="c999999">#999999</color>
+    <color name="cEF0202">#EF0115</color>
+    <color name="c2EEDB5">#2EEDB5</color>
+    <color name="cFE6800">#FE6800</color>
+    <color name="c989898">#989898</color>
+
+
+</resources>

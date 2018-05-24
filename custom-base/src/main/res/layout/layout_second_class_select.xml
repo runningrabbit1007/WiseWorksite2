@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_40"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="综合"
+            android:id="@+id/synthesis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/text_first_color"
+            android:textSize="@dimen/content_second_title_size" />
+        <ImageView
+            android:id="@+id/synthesis_img"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_11.5"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.sx.common_base.view.DrawableTexttView
+            android:gravity="center"
+            android:id="@+id/privice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:text="价格"
+            android:id="@+id/sales_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/text_first_color"
+            android:textSize="@dimen/content_second_title_size" />
+        <ImageView
+            android:id="@+id/sales_volume_img"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_11.5"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="信用"
+            android:id="@+id/grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/text_first_color"
+            android:textSize="@dimen/content_second_title_size" />
+        <ImageView
+            android:id="@+id/grade_img"
+            android:layout_width="@dimen/dp_12"
+            android:layout_height="@dimen/dp_11.5"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/exchange_img"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_5"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

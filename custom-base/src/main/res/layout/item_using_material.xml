@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10">
+
+
+
+        <ImageView
+            android:id="@+id/image_iv"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_70"
+            android:src="@drawable/default_img"/>
+
+        <TextView
+            android:id="@+id/material_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_first_color"
+            android:textSize="@dimen/content_second_title_size"
+            android:layout_toRightOf="@+id/image_iv"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/material_create_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_third_color"
+            android:textSize="@dimen/content_third_title_size"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/image_iv"
+            android:layout_marginLeft="10dp" />
+
+        <LinearLayout
+            android:id="@+id/spec_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/image_iv"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_alignBottom="@id/image_iv">
+
+            <TextView
+                android:id="@+id/material_spec_tv"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_third_color"
+                android:textSize="@dimen/content_third_title_size"
+                android:layout_toRightOf="@+id/image_iv"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/material_count_tv"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_third_color"
+                android:textSize="@dimen/content_third_title_size"
+                android:layout_toRightOf="@+id/image_iv"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/gray_line"/>
+
+</LinearLayout>

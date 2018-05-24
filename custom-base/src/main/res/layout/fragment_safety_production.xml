@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <include layout="@layout/inc_common_top_bar" />
+    
+    
+    <com.sx.common_base.view.ImplantGridView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:id="@+id/id_grid_xgv"
+        android:numColumns="4"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/beijing"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/top_status_tv"
+            style="@style/smallStraightShapeTv"/>
+
+        <TextView
+            android:id="@+id/top_time_tv"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/dp_5"
+            android:text="即时安全消息"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/content_second_title_size"
+            android:textColor="@color/text_third_color"/>
+
+    </LinearLayout>
+
+    <com.sx.common_base.view.ImplantListView
+        android:layout_margin="@dimen/dp_10"
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

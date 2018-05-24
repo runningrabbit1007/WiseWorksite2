@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="adapter_item_tag_key" type="id"/>
+    <item name="cb_item_tag" type="id"/>
+    <item name="st_page_fragment" type="id" />
+    <item type="id" name="expandable_text"/>
+    <item type="id" name="expand_collapse"/>
+    <item name="no_contact_permission" type="id"/>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 是否可以轮询 -->
+    <declare-styleable name="CONVENIENT_BANNER">
+        <attr name="canLoop" format="boolean" />
+    </declare-styleable>
+</resources>

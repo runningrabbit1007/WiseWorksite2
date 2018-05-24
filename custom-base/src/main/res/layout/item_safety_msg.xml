@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/dp_30"
+            android:text="04月05日"
+            android:textSize="@dimen/content_second_title_size"
+            android:textColor="@color/text_third_color"
+            />
+
+        <TextView
+            android:id="@+id/item_status"
+            style="@style/blueTwoBtn"
+            android:text="塔机"
+            android:layout_below="@id/item_date"
+            android:layout_marginTop="@dimen/dp_5"
+        />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一级预警"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_5"
+            android:layout_toRightOf="@id/item_date"
+            android:textSize="@dimen/content_first_title_size"
+            android:textColor="@color/text_red_color"
+            />
+
+        <TextView
+            android:id="@+id/item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1号塔机于2018-1565131号塔机于2018-1565131号塔机于2018-156513"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_5"
+            android:layout_toRightOf="@id/item_status"
+            android:layout_alignBaseline="@id/item_status"
+            android:textSize="@dimen/content_second_title_size"
+            android:textColor="@color/text_second_color"
+            />
+
+
+        <TextView
+            style="@style/blueWhiteBtn"
+            android:text="处理"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/content_second_title_size"
+            />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/gray_line_7"
+        android:background="@color/background_color"/>
+
+
+
+
+
+
+</LinearLayout>

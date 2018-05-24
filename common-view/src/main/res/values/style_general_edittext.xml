@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 自定义输入框部分 -->
+    <declare-styleable name="GeneralEditText">
+
+        <!-- 自定义输入框的字体大小 dimension -->
+        <attr name="textSize" format="dimension" />
+        <!-- 自定义输入框的字体颜色  color -->
+        <attr name="textColor" format="color" />
+        <!-- 自定义输入框的背景  reference -->
+        <attr name="background" format="reference" />
+        <!-- 自定义输入框的hint String -->
+        <attr name="hint" format="string" />
+        <!-- 自定义输入框左边的内容 string -->
+        <attr name="text" format="string|reference" />
+        <!-- 自定义输入框默认的内容 string -->
+        <attr name="defaultContent" format="string" />
+        <!-- 自定义输入框里面padding -->
+        <attr name="padding" format="dimension" />
+        <!-- 自定义输入框里面padding -->
+        <attr name="inputType" format="string" />
+        <!-- 自定义输入框里面的行数integer -->
+        <attr name="lines" format="integer" />
+        <!-- 自定义下面图标 -->
+        <attr name="tab_icon" format="reference" />
+        <attr name="tab_color" format="color" />
+        <attr name="tab_text" format="string" />
+        <attr name="tab_textSize" format="dimension" />
+        <attr name="maxLength" format="integer" />
+    </declare-styleable>
+</resources>

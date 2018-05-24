@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:maowo="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_radio"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/black"
+    android:orientation="horizontal"
+    android:visibility="visible"
+    android:weightSum="4">
+
+
+    <com.sx.common_base.appwidget.SmartMallBtn
+        android:id="@+id/rb_main"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="@null"
+        android:clickable="true"
+        android:gravity="center|bottom"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        maowo:selectColor="@color/text_main_color"
+        maowo:textContent="首页"
+        maowo:unSelectColor="@color/white"
+        maowo:checkedResource="@drawable/shouye_s"
+        maowo:unCheckedResource="@drawable/shouye_n"
+        maowo:redDot="false"/>
+
+    <com.sx.common_base.appwidget.SmartMallBtn
+        android:id="@+id/rb_manager"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center|bottom"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        maowo:selectColor="@color/text_main_color"
+        maowo:textContent="项目管理"
+        maowo:unSelectColor="@color/white"
+        maowo:checkedResource="@drawable/xiangmuguanli_s"
+        maowo:unCheckedResource="@drawable/xiangmuguanli_n"
+        maowo:redDot="false"/>
+
+
+    <com.sx.common_base.appwidget.SmartMallBtn
+        android:id="@+id/rb_safety"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="@null"
+        android:clickable="true"
+        android:gravity="center|bottom"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        maowo:selectColor="@color/text_main_color"
+        maowo:textContent="安全生产"
+        maowo:checkedResource="@drawable/anquanshengchan_s"
+        maowo:unCheckedResource="@drawable/anquanshengchan_n"
+        maowo:unSelectColor="@color/white"
+        maowo:redDot="true"/>
+
+    <com.sx.common_base.appwidget.SmartMallBtn
+        android:id="@+id/rb_setting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="@null"
+        android:clickable="true"
+        android:gravity="center|bottom"
+        android:paddingBottom="5dp"
+        android:paddingTop="10dp"
+        maowo:selectColor="@color/text_main_color"
+        maowo:textContent="设置"
+        maowo:checkedResource="@drawable/shezhi_s"
+        maowo:unCheckedResource="@drawable/shezhi_n"
+        maowo:unSelectColor="@color/white"
+        maowo:redDot="false"/>
+
+
+
+
+</LinearLayout>
+

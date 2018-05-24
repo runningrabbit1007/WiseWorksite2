@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:padding="@dimen/dp_10">
+
+        <include layout="@layout/item_top_content" />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/sp15">
+
+            <TextView
+                android:id="@+id/item_mr_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_first_color"
+                android:textSize="@dimen/content_second_title_size"
+                />
+
+            <TextView
+                android:id="@+id/item_mr_rct_btn"
+                style="@style/blueWhiteBtn"
+                android:visibility="gone"
+                android:text="签收"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/item_mr_receive_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/content_third_title_size"
+                android:textColor="@color/text_third_color"/>
+
+            <TextView
+                android:id="@+id/item_mr_consignee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/content_third_title_size"
+                android:textColor="@color/text_third_color"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_6">
+
+            <TextView
+                android:id="@+id/item_mr_dsg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/content_third_title_size"
+                android:textColor="@color/text_third_color"/>
+
+            <TextView
+                android:id="@+id/item_mr_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/content_third_title_size"
+                android:textColor="@color/text_third_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_6">
+
+            <TextView
+                android:id="@+id/item_mr_supplier"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/content_third_title_size"
+                android:textColor="@color/text_third_color"/>
+
+
+        </LinearLayout>
+
+
+        <View
+            style="@style/gray_line_7"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

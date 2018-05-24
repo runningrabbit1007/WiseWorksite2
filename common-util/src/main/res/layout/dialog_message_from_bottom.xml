@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="现在提交订单?"
+        android:textColor="@color/c282828"
+        android:textSize="14sp" />
+
+    <View style="@style/gray_line" />
+
+    <TextView
+        android:id="@+id/tv_dialog_sure"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/ased_confirm"
+        android:textColor="@color/c282828"
+        android:textSize="14sp" />
+
+    <View
+        style="@style/gray_line"
+        android:layout_height="7dp" />
+
+    <TextView
+        android:id="@+id/tv_dialog_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/ased_cancel"
+        android:textColor="#D9421F" />
+</LinearLayout>

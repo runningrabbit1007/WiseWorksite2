@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- 自定义通用的titileBar -->
+    <declare-styleable name="GENERAL_TITLE_BAR">
+        <attr name="barBackground" format="reference|color" />
+        <attr name="returnIsClick" format="boolean" />
+        <attr name="rightAndReturnTextSize" format="dimension" />
+        <attr name="middleTextSize" format="dimension" />
+    </declare-styleable>
+</resources>

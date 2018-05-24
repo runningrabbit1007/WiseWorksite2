@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="F87622">#1884ff</color>
+
+    <color name="F3F7F8">#F3F7F8</color>
+
+    <color name="text_main_second_color">#FCA46C</color>
+
+    <color name="text_main_third_color">#FED8BF</color>
+
+    <!--wheel 的颜色值-->
+    <color name="whell_item_bg_select">#efefef</color>
+
+</resources>

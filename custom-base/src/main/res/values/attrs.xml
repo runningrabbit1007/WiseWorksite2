@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 自定义通用的titileBar -->
+    <declare-styleable name="general_title_bar">
+        <attr name="barBackground" format="reference|color" />
+        <attr name="retrunIsClick" format="boolean" />
+        <attr name="rightAndReturnTextSize" format="dimension" />
+        <attr name="middleTextSize" format="dimension" />
+    </declare-styleable>
+
+    <!-- 自定义滚动条 -->
+    <declare-styleable name="adBannerRollView">
+        <attr name="lodingBackground" format="reference|color" />
+        <attr name="dotNormalBackground" format="reference|color" />
+        <attr name="dotFcousBackGround" format="reference|color" />
+        <attr name="dotLocation" format="enum">
+            <enum name="center" value="0" />
+            <enum name="right" value="2" />
+            <enum name="left" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- 评分的view -->
+    <declare-styleable name="UserGradeView">
+        <attr name="normalBackground" format="reference" />
+        <attr name="fcousBackGround" format="reference" />
+        <attr name="gradeNumber" format="integer" />
+        <attr name="isClick" format="boolean" />
+        <attr name="margin" format="dimension" />
+    </declare-styleable>
+
+    <!-- 多选按钮的view -->
+    <declare-styleable name="MultipleChoiceButtonView">
+        <attr name="bt_select_background" format="color|reference" />
+        <attr name="bt_normal_background" format="color|reference" />
+        <attr name="line_show_number" format="integer" />
+        <attr name="bt_text_select_color" format="color" />
+        <attr name="bt_text_normal_color" format="color" />
+    </declare-styleable>
+
+    <!-- 自定义输入框部分 -->
+    <declare-styleable name="mowen">
+
+        <!-- 自定义输入框的字体大小 dimension -->
+        <attr name="textSize" format="dimension" />
+        <!-- 自定义输入框的字体颜色  color -->
+        <attr name="textColor" format="color" />
+        <!-- 自定义输入框的背景  reference -->
+        <attr name="background" format="reference" />
+        <!-- 自定义输入框的hint String -->
+        <attr name="hint" format="string" />
+        <!-- 自定义输入框左边的内容 string -->
+        <attr name="text" format="string|reference" />
+        <!-- 自定义输入框默认的内容 string -->
+        <attr name="defaultContent" format="string" />
+        <!-- 自定义输入框里面padding -->
+        <attr name="padding" format="dimension" />
+        <!-- 自定义输入框里面padding -->
+        <attr name="inputType" format="string" />
+        <!-- 自定义输入框里面的行数integer -->
+        <attr name="lines" format="integer" />
+        <!-- 自定义下面图标 -->
+        <attr name="tab_icon" format="reference" />
+        <attr name="tab_color" format="color" />
+        <attr name="tab_text" format="string" />
+        <attr name="tab_textSize" format="dimension" />
+        <attr name="maxLength" format="integer" />
+    </declare-styleable>
+    <!-- 开关按钮 -->
+    <declare-styleable name="ToggleButton">
+        <attr name="switch_off" format="reference" />
+        <attr name="switch_on" format="reference" />
+        <attr name="switch_point" format="reference" />
+    </declare-styleable>
+    <!-- 单选框 -->
+    <declare-styleable name="HuiCheckBox">
+
+        <!-- 选择状态的background -->
+        <attr name="checkedBackgroud" format="reference" />
+        <!-- 没有选择的background -->
+        <attr name="unCheckedBackground" format="reference" />
+        <!-- 默认的状态 -->
+        <attr name="normal_status" format="boolean" />
+    </declare-styleable>
+    <!-- 获取验证码按钮 -->
+    <declare-styleable name="VerificationCodeButton">
+        <attr name="timing_background" format="reference" />
+        <attr name="timing_textColor" format="color" />
+    </declare-styleable>
+    <!-- 宽高比的图片 -->
+    <declare-styleable name="AspectRatioImageView">
+
+        <!-- 宽度比例 float -->
+        <attr name="width_proportion" format="float" />
+        <!-- 高度比例 float -->
+        <attr name="height_proportion" format="float" />
+    </declare-styleable>
+    <!-- 中间带有横线的价格 -->
+    <declare-styleable name="PriceLineTextView">
+        <attr name="line_color" format="color" />
+        <attr name="stroke_width" format="dimension" />
+        <attr name="line_margin" format="dimension" />
+    </declare-styleable>
+    <!-- 圆形图片 -->
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+    <!-- view pager 指示器 -->
+    <declare-styleable name="SimpleViewPagerIndicator">
+        <attr name="background_select" format="reference|color" />
+        <!-- 默认背景色 -->
+        <attr name="default_background" format="reference|color" />
+        <!-- 选中字体颜色 -->
+        <attr name="text_selectColor" format="color"></attr>
+        <!-- 默认字体颜色 -->
+        <attr name="default_textColor" format="color" />
+        <!-- 是否显示下划线 -->
+        <attr name="is_showLine" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="LoadingView">
+        <attr name="loadingText" format="string" />
+        <attr name="loadingTextAppearance" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="DrawableCenterTextView">
+        <attr name="drawableLeft" format="reference" />
+        <attr name="drawableDefaultRight" format="reference" />
+        <attr name="drawableSelectRight" format="reference" />
+        <attr name="textDefaultColor" format="color" />
+        <attr name="textSelectColor" format="color" />
+        <attr name="text_string" format="string" />
+        <attr name="text_size" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="ListPopuScreenMenuView">
+        <attr name="menu_tab_height" format="dimension" />
+        <attr name="isLine" format="boolean" />
+        <attr name="menu_tab_bg" format="reference|color" />
+    </declare-styleable>
+    <!-- 3D旋转收藏 -->
+    <declare-styleable name="CollectRote3DView">
+        <attr name="favoriteResouce" format="reference" />
+        <attr name="putAwayResouce" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="SegmentedGroup">
+        <attr name="sc_corner_radius" format="dimension" />
+        <attr name="sc_border_width" format="dimension" />
+        <attr name="sc_tint_color" format="color" />
+        <attr name="sc_checked_text_color" format="color" />
+    </declare-styleable>
+
+    <!--相机拍摄身份证-->
+    <declare-styleable name="PreviewBorderView">
+        <attr name="tipText" format="string"/>
+        <attr name="tipTextColor" format="color|reference"/>
+        <attr name="tipTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <!--自定义星级控件-->
+    <declare-styleable name="StarView">
+        <attr name="mImageWidth" format="dimension"/>
+        <attr name="mImageHeight" format="dimension" />
+        <attr name="mDefaultImageId" format="reference" />
+        <attr name="mClickImageId" format="reference" />
+        <attr name="mMargin" format="dimension" />
+        <attr name="mStarNum" format="integer" />
+        <attr name="mStarChoose" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SlideDetailsLayout">
+        <!-- float value for indicate the moment of switch panel-->
+        <attr name="percent" format="float"/>
+        <!-- how long the animation keep-->
+        <attr name="duration" format="integer"/>
+        <!-- default panel to show after init-->
+        <attr name="default_panel" format="enum">
+            <enum name="front" value="0"/>
+            <enum name="behind" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="showHighlight" format="boolean" />
+        <attr name="defaultDrawable" format="reference" />
+        <attr name="selectDrawable" format="reference" />
+        <attr name="defaultTextColor" format="color|reference"/>
+        <attr name="selectTextColor" format="color|reference" />
+        <attr name="mode">
+            <enum name="MULTI" value="0" />
+            <enum name="SINGLE" value="1"/>
+        </attr>
+        <attr name="maxSelectionCount" format="integer"/>
+    </declare-styleable>
+
+    <!-- 设置圆角 -->
+    <declare-styleable name="roundConner">
+        <attr name="round" format="dimension" />
+    </declare-styleable>
+
+
+
+    <!--icon+文字-->
+    <attr name="backColor" format="color" />
+    <attr name="backColorPress" format="color" />
+    <attr name="textColorPress" format="color" />
+
+    <declare-styleable name="ButtonExtendM">
+         <attr name="backColor"/>
+         <attr name="backColorPress"/>
+         <attr name="textColor"/>
+         <attr name="textColorPress"/>
+         <attr name="iconDrawable" format="reference" />
+         <attr name="iconDrawablePress" format="reference" />
+         <attr name="textCharacter" format="string" />
+         <attr name="textCharacterSize" format="dimension" />
+         <attr name="spacing" format="dimension" />
+         <attr name="style">
+             <enum name="iconLeft" value="0" />
+             <enum name="iconRight" value="1" />
+             <enum name="iconUp" value="2" />
+             <enum name="iconBottom" value="3" />
+         </attr>
+     </declare-styleable>
+</resources>

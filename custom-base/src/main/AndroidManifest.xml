@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sx.common_base">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity android:name=".activity.ProjectMainActivity" />
+        <activity android:name=".activity.project_maneger.DwgChangeActivity" />
+        <activity android:name=".activity.project_maneger.HinderDangerManagerActivity" />
+        <activity android:name=".activity.project_maneger.MaterialRctActivity" />
+        <activity android:name=".activity.project_maneger.MaterialPurchaseActivity" />
+        <activity android:name=".activity.project_maneger.UsingMaterialActivity" />
+        <activity android:name=".activity.project_maneger.DwgChangeDetailActivity" />
+        <activity android:name=".activity.project_maneger.HinderDangerDetailActivity" />
+        <activity android:name=".activity.project_maneger.MaterialRctDetailActivity" />
+        <activity android:name=".activity.project_maneger.MaterialPurchaseDetailActivity" />
+        <activity android:name=".activity.project_maneger.UsingMaterialDetailActivity" />
+        <activity android:name=".activity.project_maneger.SafetyInspectionActivity" />
+        <activity android:name=".activity.project_maneger.SafetyInspectionDetailActivity" />
+        <activity android:name=".activity.project_maneger.HinderDangerDetailAddActivity" />
+        <activity android:name=".activity.project_maneger.SafetyInspectionDetailAddActivity" />
+        <activity android:name=".activity.project_maneger.MaterialRctAddActivity" />
+        <activity android:name=".activity.project_maneger.UsingMaterialAddActivity" />
+        <activity android:name=".activity.project_maneger.MaterialPurchaseAddActivity" />
+        <activity android:name=".activity.project_maneger.TeamWorkManagerActivity" />
+        <activity android:name=".activity.project_maneger.WorkerInformationActivity" />
+        <activity android:name=".activity.project_maneger.WorkerInformationDetailActivity" />
+        <activity android:name=".activity.project_maneger.WorkerInformationAddActivity" />
+        <activity android:name=".activity.project_maneger.StaffSafetyActivity"></activity>
+    </application>
+
+</manifest>

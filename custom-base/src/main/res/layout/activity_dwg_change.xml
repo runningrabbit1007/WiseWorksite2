@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dwg_change"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context="com.sx.common_base.activity.project_maneger.DwgChangeActivity">
+
+
+    <include layout="@layout/inc_common_top_bar" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:padding="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:textSize="@dimen/content_third_title_size"
+        android:textColor="@color/text_third_color"
+        android:hint="请输入关键字进行搜索"
+        android:drawableLeft="@drawable/img_search"
+        android:drawablePadding="@dimen/dp_5"
+        android:imeOptions="actionSend"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"/>
+
+
+    <com.sx.common_base.view.mlistv.XListDataIsNullView
+        android:id="@+id/contact_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"/>
+
+
+</LinearLayout>

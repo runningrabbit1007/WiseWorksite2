@@ -1,0 +1,7 @@
+<resources>
+
+
+    <string name="art_loading">请稍后……</string>
+        <string name="art_second">秒后重获</string>
+
+</resources>

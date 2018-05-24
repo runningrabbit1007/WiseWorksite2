@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="titles">
+        <item>Product</item>
+        <item>Detail</item>
+    </string-array>
+
+    <string-array name="dates">
+        <item>Today</item>
+        <item>Week</item>
+        <item>Month</item>
+    </string-array>
+
+    <string-array name="statement">
+        <item>Performance</item>
+        <item>Detail</item>
+    </string-array>
+
+    <string-array name="store_titles">
+        <item>All Products</item>
+        <item>Profile</item>
+    </string-array>
+
+    <string-array name="aao_change_type">
+        <item name="aao_return_way">Return</item>
+        <item name="aao_exchange_way">Exchange</item>
+        <item name="aao_refund_way">Refund</item>
+    </string-array>
+
+    <string-array name="dates_two">
+        <item>day</item>
+        <item>week</item>
+        <item>mouth</item>
+    </string-array>
+
+
+
+
+
+
+</resources>

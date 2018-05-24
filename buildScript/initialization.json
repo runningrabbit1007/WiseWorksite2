@@ -1,0 +1,272 @@
+{
+  "app": {
+    "name": "人民里",
+    "version": "1.6.0",
+    "versionSort": "119",
+    "env": "0",
+    "apiUrl": "https://capi.maowocloud.com/v1",
+    "themeCode": "red",
+    "assetsUrl": "com.maowo:shellres:1.1.3"
+  },
+  "platform": {
+    "package": "com.maowo.smartmall.rml",
+    "appId": "com.maowo.smartmall.rml",
+    "certificateUrl": "https://static.maowocloud.com/maowo_saas/ios/taskin.cer",
+    "privateKey": "123456"
+  },
+  "sdkAccounts": {
+    "jpush": {
+      "appKey": "56d004187603408b516dd2e9",
+      "masterSecret": "906cf9c2917f7aee8c367813"
+    },
+    "easemob": {
+      "appKey": "liker365#renminli",
+      "clientId": "YXA6BGL1kNOKEeW_goUZRLYcvw",
+      "clientSecret": "YXA62XMv2gBJsnpf9jsO1cD0cjZkgWY",
+      "huaweiPushAppKey": "",
+      "miPushAppId": "",
+      "mipushAppKey": ""
+    },
+    "umeng": {
+      "iosKey": "",
+      "androidKey": "58d22e4fa325112ed3000323"
+    },
+    "baidu": {
+      "key": "DqnAbONpxKNL8IgLHYbsqjYcZTfg3Efg"
+    },
+    "shareSdk": {
+      "appKey": "",
+      "weixin": {
+        "appId": "",
+        "appSecret": ""
+      },
+      "qq": {
+        "appId": "100371282",
+        "appKey": "aed9b0303e3ed1e27bae87c33761161d"
+      },
+      "weibo": {
+        "appKey": "827729892",
+        "appSecret": "dcb6f16196a2745b6320cbfbd795e023"
+      }
+    },
+    "weixinPays": [
+      {
+        "mallId": "11992447153102848",
+        "appId": "wxa766412fd4c1b76f",
+        "mchKey": "c37ca7e12a834aa6b082ed4708ec5228",
+        "mchId": "1460935802"
+      }
+    ]
+  },
+  "mall": {
+    "mallBrandId": "11992444753960964",
+    "mallId": "11992447153102848",
+    "mallName": "人民里"
+  },
+  "channels": [
+    {
+      "channelName": "活动",
+      "id": "44888660374009864",
+      "title": "活动",
+      "afterTitleColour": "#611515",
+      "beforeTitleColour": "#0c1c13",
+      "iconUrl": "tab_img_1_normal",
+      "activeIconUrl": "tab_img_1_pressed",
+      "jump": {
+        "url": "maowo://apps.mw/menu1"
+      },
+      "toolbar": [
+        {
+          "type": "0",
+          "position": "0",
+          "text": "搜索",
+          "iconUrl": "",
+          "jump": {
+            "url": "maowo://apps.mw/menu1"
+          }
+        },
+        {
+          "type": "1",
+          "position": "1",
+          "text": "更多",
+          "iconUrl": "tab_img_2_pressed",
+          "menus": [
+            {
+              "text": "添加朋友",
+              "iconUrl": "tab_img_3_pressed",
+              "jump": {
+                "url": "maowo://apps.mw/menu1"
+              }
+            },
+            {
+              "text": "好友列表",
+              "iconUrl": "tab_img_4_pressed",
+              "jump": {
+                "url": "maowo://apps.mw/menu1"
+              }
+            }
+          ]
+        },
+        {
+          "type": "2",
+          "position": "1",
+          "text": "定位",
+          "iconUrl": "tab_img_2_pressed",
+          "jump": {
+            "url": "maowo://apps.mw/menu1"
+          }
+        }
+      ]
+    },
+    {
+      "channelName": "商圈",
+      "id": "44888867639736320",
+      "title": "商圈",
+      "afterTitleColour": "#611515",
+      "beforeTitleColour": "#0c1c13",
+      "iconUrl": "tab_img_2_normal",
+      "activeIconUrl": "tab_img_2_pressed",
+      "jump": {
+        "url": "maowo://apps.mw/menu1"
+      },
+      "toolbar": [
+        {
+          "type": "0",
+          "position": "0",
+          "text": "搜索",
+          "iconUrl": "icon6",
+          "jump": {
+            "url": "maowo://apps.mw/menu1"
+          }
+        },
+        {
+          "type": "2",
+          "position": "1",
+          "text": "定位",
+          "iconUrl": "icon7",
+          "jump": {
+            "url": "maowo://apps.mw/menu1"
+          }
+        }
+      ]
+    },
+    {
+      "channelName": "约吧",
+      "id": "44889194250188810",
+      "title": "约吧",
+      "afterTitleColour": "#611515",
+      "beforeTitleColour": "#0c1c13",
+      "iconUrl": "tab_img_3_normal",
+      "activeIconUrl": "tab_img_3_pressed",
+      "jump": {
+        "url": "maowo://apps.mw/menu1"
+      },
+      "toolbar": [
+        {
+          "type": "0",
+          "position": "0",
+          "text": "搜索",
+          "iconUrl": "icon8",
+          "jump": {
+            "url": "maowo://apps.mw/menu1"
+          }
+        },
+        {
+          "type": "2",
+          "position": "1",
+          "text": "定位",
+          "iconUrl": "icon9",
+          "jump": {
+            "url": "maowo://apps.mw/menu1"
+          }
+        }
+      ]
+    },
+    {
+      "channelName": "消息",
+      "id": "44889047617320960",
+      "title": "消息",
+      "afterTitleColour": "#611515",
+      "beforeTitleColour": "#0c1c13",
+      "iconUrl": "tab_img_4_normal",
+      "activeIconUrl": "tab_img_4_pressed",
+      "jump": {
+        "url": "maowo://apps.mw/menu1"
+      },
+      "toolbar": [
+        {
+          "type": "0",
+          "position": "0",
+          "text": "搜索",
+          "iconUrl": "icon10",
+          "jump": {
+            "url": "maowo://apps.mw/menu1"
+          }
+        },
+        {
+          "type": "2",
+          "position": "1",
+          "text": "定位",
+          "iconUrl": "icon11",
+          "jump": {
+            "url": "maowo://apps.mw/menu1"
+          }
+        }
+      ],
+      "tabs": [
+        {
+          "channelName": "聊天",
+          "id": "44889047617320960",
+          "jump": {
+            "url": "maowo://apps.mw/menu1"
+          }
+        },
+        {
+          "channelName": "动态",
+          "id": "448890476173209600",
+          "jump": {
+            "url": "maowo://apps.mw/menu1"
+          }
+        },
+        {
+          "channelName": "通知",
+          "id": "44889047617320960",
+          "jump": {
+            "url": "maowo://apps.mw/menu1"
+          }
+        }
+      ]
+    },
+    {
+      "channelName": "我的",
+      "id": "44889313653635080",
+      "title": "我的",
+      "afterTitleColour": "#611515",
+      "beforeTitleColour": "#0c1c13",
+      "iconUrl": "tab_img_1_normal",
+      "activeIconUrl": "tab_img_1_pressed",
+      "jump": {
+        "url": "maowo://apps.mw/menu1"
+      }
+    }
+  ],
+  "guideImages": [
+    "guide_p1",
+    "guide_p2",
+    "guide_p3"
+  ],
+  "componets": [
+    {
+      "id": "/layout",
+      "assetsUrl": "git://git.mao-wo.com/xxx"
+    },
+    {
+      "id": "git://git.mao-wo.com/xxx",
+      "assetsUrl": "git://git.mao-wo.com/xxx"
+    },
+    {
+      "id": "/layout",
+      "assetsUrl": "git://git.mao-wo.com/xxx"
+    }
+  ]
+}

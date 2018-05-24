@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 单选框 -->
+    <declare-styleable name="SmartBtn">
+
+        <!-- 选择状态的background -->
+        <attr name="checkedResource" format="reference"/>
+        <!-- 没有选择的background -->
+        <attr name="unCheckedResource" format="reference"/>
+        <!-- 默认的状态 -->
+        <attr name="smartNormalStatus" format="boolean"/>
+
+        <!-- 字体大小 -->
+        <attr name="smartTextSize" format="dimension|reference"/>
+        <!-- 选中字体颜色 -->
+        <attr name="selectColor" format="color"/>
+        <!-- 为选中字体颜色 -->
+        <attr name="unSelectColor" format="color"/>
+        <!-- 文字内容 -->
+        <attr name="textContent" format="reference|string"/>
+
+        <!--有没有红点-->
+        <attr name="redDot" format="boolean"/>
+    </declare-styleable>
+
+</resources>

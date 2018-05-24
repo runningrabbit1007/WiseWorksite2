@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<color name="red_tip_color">#d3321b</color>-->
+    <!-- 深黑 -->
+    <!--<color name="jet_black">#121212</color>-->
+    <color name="gray">#F4F4F4</color>
+    <color name="red">@color/cFF7200</color>
+    <!--<color name="all_bg">#FBFBFB</color>-->
+    <!--<color name="three_digrey">#CCCCCC</color>-->
+    <!--<color name="layout_backgroud_color">#fafafa</color>-->
+    <color name="color_gray">#b4b4b4</color>
+
+    <!--activity的背景色-->
+    <color name="root_bg_color">@color/cF5F5F5</color>
+    <!-- 无色 -->
+    <!--<color name="no_color">#00000000</color>-->
+
+    <!-- 无色 -->
+    <!--<color name="transparent">#9000</color>-->
+
+
+
+
+
+    <!-- 次灰色 -->
+    <!--<color name="medium_digrey">#666666</color>-->
+
+    <!-- 深灰色 -->
+    <!--<color name="main_digrey"> #999999</color>-->
+
+    <!-- 头部颜色 -->
+    <color name="top_bg_color"> #323a45</color>
+
+    <!-- 灰色 -->
+    <color name="main_gray"> #767676</color>
+    <!--<color name="menu_item_text_color">#E60200</color>-->
+    <!--<color name="province_line_border">#C7C7C7</color>-->
+
+    <color name="top_color">#333333</color>
+
+    <color name="defualt_text_color">#636363</color>
+
+    <!--<color name="triangle">#aa72d572</color>-->
+    <!--<color name="circle">#aa738ffe</color>-->
+    <!--<color name="rect">#aae84e40</color>-->
+    <!--<color name="view_bg">#00000000</color>-->
+    <!--<color name="shadow">#25808080</color>-->
+
+    <!--按钮的背景色-->
+    <color name="radio_button_selected_color">@color/c1884FF</color>
+    <!--按钮不可点的背景色-->
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+
+    <!-- 应用主色 -->
+    <color name="text_main_color">@color/c1884FF</color>
+    <!--应用背景色-->
+    <color name="background_color">@color/cF5F5F5</color>
+    <!--字体颜色红色-->
+    <color name="text_red_color">@color/cEF0202</color>
+
+    <!--字体颜色绿色-->
+    <color name="text_green_color">@color/c2EEDB5</color>
+
+    <!--字体颜色橘色-->
+    <color name="text_orange_color">@color/cFE6800</color>
+
+    <!--字体颜色灰色-->
+    <color name="text_gray_color">@color/c989898</color>
+
+
+    <!--字体蓝色-->
+    <color name="text_blue_color">@color/c2E90FF</color>
+
+    <!--文字颜色一级黑-->
+    <color name="text_first_color">@color/c333333</color>
+    <!--文字颜色二级黑-->
+    <color name="text_second_color">@color/c666666</color>
+    <!--文字颜色三级黑-->
+    <color name="text_third_color">@color/c999999</color>
+
+    <!--线条的背景色-->
+    <color name="line_background_color">@color/cEDEDED</color>
+
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+
+    <!-- 黑色 -->
+    <color name="black">#121212</color>
+
+
+    <!-- 无色 -->
+    <color name="no_color">#00000000</color>
+
+    <!-- 透明 -->
+    <color name="transparent">#9000</color>
+
+    <!-- 主色 -->
+    <color name="light_green">#24cfa2</color>
+
+    <!--deep gray-->
+    <color name="deep_gray">#efeded</color>
+
+
+
+    <!--loadingDataView 相关-->
+    <color name="triangle">#aa72d572</color>  <!--数据加载loadingView的三个图形颜色-->
+    <color name="circle">#aa738ffe</color>
+    <color name="rect">#aae84e40</color>
+
+
+
+    <!--dialog-->
+    <color name="c282828">#282828</color>
+    <color name="cD93535">#D93535</color>
+    <color name="shadow">#25808080</color> <!--//窗口颜色-->
+</resources>

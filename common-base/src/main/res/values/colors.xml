@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF7200</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="c000000_70">#32000000</color>
+    <color name="c282828">#282828</color>
+
+    <color name="colorMainBackground">#F2F3F4</color>
+    <color name="customactivityoncrash_primary">#3F51B5</color>
+    <color name="customactivityoncrash_primary_dark">#283593</color>
+    <color name="customactivityoncrash_accent">#FF4081</color>
+
+    <color name="title_bar_bg">#FF7200</color>
+</resources>

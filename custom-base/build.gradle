@@ -1,0 +1,55 @@
+apply from: getLibPath
+
+android {
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(path: ':router')
+    compile project(path: ':common-base')
+    compile project(path: ':common-view')
+    compile project(path: ':router')
+    compile deps.permission
+    compile deps.swipeRecyclerview
+    compile deps.design
+    compile deps.rxgalleryfinal
+    compile deps.logger
+    compile project(path: ':common-base')
+    compile project(path: ':MPChartLib')
+    compile deps.navigationtabstrip
+    compile files('libs/pinyin4j-2.5.0.jar')
+    compile project(path: ':library')
+
+
+
+
+
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.android.support:support-annotations:26.0.0-alpha1'
+    compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.yuyh.bubble:library:1.0.0'
+    compile 'com.google.android:flexbox:0.2.6'
+    compile 'com.mylhyl:acp:1.1.5'
+    compile 'com.google.android.gms:play-services-base:11.0.1'
+    compile 'com.google.android.gms:play-services-maps:11.0.1'
+    compile 'com.google.android.gms:play-services-location:11.0.1'
+    compile 'com.github.paradoxie:ShopAnimDemo:0.1'
+    compile 'cn.finalteam:galleryfinal:1.4.8.7'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+
+    compile 'com.contrarywind:Android-PickerView:4.1.3'//
+    compile project(path: ':common-util')
+    compile 'com.android.support.test.espresso:espresso-core:2.2.2'
+}
+
+
+sourceCompatibility = JAVA_SOURCE
+targetCompatibility = JAVA_TARGET

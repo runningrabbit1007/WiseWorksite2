@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/dp_10"
+    >
+
+    <TextView
+        android:id="@+id/top_desc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/content_third_title_size"
+        android:text="创建时间："
+        android:textColor="@color/text_third_color"/>
+
+    <TextView
+        android:id="@+id/top_time_tv"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/content_third_title_size"
+        android:text="2014-12-04 04:06:18"
+        android:textColor="@color/text_second_color"/>
+
+    <LinearLayout
+        android:id="@+id/top_status_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/red_dot"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_8"
+            android:background="@drawable/tips_circle"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/top_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/content_third_title_size"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:text="待整改"
+            android:textColor="@color/text_third_color"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

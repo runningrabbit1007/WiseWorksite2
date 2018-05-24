@@ -1,0 +1,138 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion Integer.parseInt(COMPILE_SDK_VERSION)
+    buildToolsVersion BUILD_TOOLS_VERSION
+    defaultConfig {
+        minSdkVersion Integer.parseInt(MIN_SDK_VERSION)
+        targetSdkVersion Integer.parseInt(TARGET_SDK_VERSION)
+        applicationId gradle.APP_PACKAGE
+        versionCode Integer.parseInt(gradle.APP_VERSION_SORT)
+        versionName gradle.APP_VERSION
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        config {
+            storeFile file(rootDir.absolutePath + '/Maowo.jks')
+            keyAlias 'smartmall'
+            keyPassword 'com.smartmall'
+            storePassword 'com.maowo'
+        }
+    }
+
+    //移除lint检测的error
+    lintOptions {
+        abortOnError false
+        disable 'MissingTranslation'
+    }
+
+    buildTypes {
+        debug {
+
+            // debug模式下，显示log
+//            buildConfigField("boolean", "LOG_DEBUG", "true")
+            //为已经存在的applicationId添加后缀
+//            applicationIdSuffix ".debug"
+            // 为版本名添加后缀
+            versionNameSuffix "-debug"
+            // 不开启混淆
+            minifyEnabled false
+            // 不开启ZipAlign优化
+            zipAlignEnabled false
+            // 不移除无用的resource文件
+            shrinkResources false
+            // 使用config签名
+//            signingConfig signingConfigs.config
+
+            resValue "string", "app_name", gradle.APP_NAME + 'debug'
+
+        }
+        release {
+            // release模式下，不显示log
+//            buildConfigField("boolean", "LOG_DEBUG", "false")
+
+            // 为版本名添加后缀
+            // versionNameSuffix "-relase"
+            // 不开启混淆
+            minifyEnabled false
+            // 开启ZipAlign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            //使用config签名
+            signingConfig signingConfigs.config
+            // 混淆文件位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+
+        }
+    }
+
+
+    productFlavors {
+        production {
+            applicationId gradle.APP_PACKAGE
+            versionName gradle.APP_VERSION
+            versionCode Integer.parseInt(gradle.APP_VERSION_SORT)
+            resValue "string", "app_name", gradle.APP_NAME
+            //替换数据必须只有一处，数组形式
+            manifestPlaceholders = [
+                    MAOWO_MALL_BRAND_ID     : "value#$gradle.SMARTMALL_BRANDID",
+                    MAOWO_MALL_ID           : "value#$gradle.SMARTMALL_MALLID",
+                    MAOWO_DATABASE_NAME     : String.valueOf(gradle.APP_PACKAGE).split("\\.").last(),
+                    MAOWO_PLATFORM_TYPE     : 0,
+                    MAOWO_API_ENV           : gradle.APP_ENV,
+                    MAOWO_MALL_API          : gradle.SMATRMALL_API_URL,
+                    EASEMOB_APPKEY          : gradle.THIRD_EASEMOB_APPKEY,
+                    JPUSH_PKGNAME           : gradle.APP_PACKAGE,
+                    JPUSH_APPKEY            : gradle.THIRD_JPUSH_APPKEY,
+                    JPUSH_CHANNEL           : "developer-default",
+                    UMENG_APPKEY            : gradle.THIRD_UMENG_APPKEY,
+                    UMENG_CHANNEL           : "maowo_" + String.valueOf(gradle.APP_PACKAGE).split("\\.").last(),
+                    BAIDU_MAP_AK            : gradle.THIRD_BAIDU_APPKEY,
+                    /*MAOWO_GMC_PUSH_APPKEY   : "value#324169311137",*/
+                    MAOWO_HUAWEI_PUSH_APPKEY: "value#$gradle.THIRD_EASEMOB_HUAWEI_PUSH_APPKEY",
+                    MAOWO_MI_PUSH_APPID     : "value#$gradle.THIRD_EASEMOB_MI_PUSH_ID",
+                    MAOWO_MI_PUSH_APPKEY    : "value#$gradle.THIRD_EASEMOB_MI_PUSH_APPKEY"
+            ]
+        }
+    }
+
+    //修改生成的apk名字
+    applicationVariants.all { variant ->
+
+        if (variant.buildType.name == 'release') {
+            variant.outputs.each { output ->
+                def appName = 'SmartMall'
+                def oldFile = output.outputFile
+                def buildName
+                def versionCode
+                def env
+                def releaseApkName
+
+                variant.productFlavors.each { product ->
+                    buildName = product.name
+                    versionCode = product.versionName
+                }
+                if (gradle.APP_ENV == '1'){
+                    env = 'production'
+                }else{
+                    env = 'test'
+                }
+
+                releaseApkName = appName + '_' + versionCode + '_' + buildName + '_' + env + '_' + getDate() + '.apk'
+                output.outputFile = new File(oldFile.parent, releaseApkName)
+            }
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+
+
+

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:landptf="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/inc_common_top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="劳动力"
+                android:textSize="@dimen/content_third_title_size"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"/>
+
+            <View
+                style="@style/gray_line_7"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_10">
+
+                <!--图纸变更-->
+                <com.sx.common_base.view.ButtonExtendM
+                    android:id="@+id/gotoDwgChange"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    landptf:iconDrawable="@drawable/tuzhibiangeng"
+                    landptf:textCharacter="图纸变更"
+                    landptf:textColor="@color/text_first_color"/>
+
+                <!--隐患管理-->
+                <com.sx.common_base.view.ButtonExtendM
+                    android:id="@+id/gotoHinderDangerManager"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    landptf:iconDrawable="@drawable/yinghuanguanli"
+                    landptf:textCharacter="隐患管理"
+                    landptf:textColor="@color/text_first_color"/>
+
+                <!--施工团队 管理-->
+                <com.sx.common_base.view.ButtonExtendM
+                    android:id="@+id/goToTeamWorkManager"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    landptf:iconDrawable="@drawable/shigongtuanduiguanli"
+                    landptf:textCharacter="施工团队管理"
+                    landptf:textColor="@color/text_first_color"/>
+
+                <!--安全巡检-->
+                <com.sx.common_base.view.ButtonExtendM
+                    android:id="@+id/goToSafetyInspection"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    landptf:iconDrawable="@drawable/anquanxunjian"
+                    landptf:textCharacter="安全巡检"
+                    landptf:textColor="@color/text_first_color"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/gray_line_7"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="@dimen/dp_5">
+                <!--人员安全-->
+                <com.sx.common_base.view.ButtonExtendM
+                    android:id="@+id/staff_safe_btn"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    landptf:iconDrawable="@drawable/renyuananquan"
+                    landptf:textCharacter="人员安全"
+                    landptf:textColor="@color/text_first_color"/>
+
+                <View
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    />
+
+            </LinearLayout>
+            <View
+                style="@style/gray_line_7"
+                android:background="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_third_title_size"
+                android:text="物料管理"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"/>
+
+            <View
+                style="@style/gray_line_7"
+                android:background="@color/white"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="@dimen/dp_5">
+                <!--物料签收-->
+                <com.sx.common_base.view.ButtonExtendM
+                    android:id="@+id/goToMaterialRct"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    landptf:iconDrawable="@drawable/wuliaoqianshou"
+                    landptf:textCharacter="物料签收"
+                    landptf:textColor="@color/text_first_color"/>
+
+                <!--物料使用-->
+                <com.sx.common_base.view.ButtonExtendM
+                    android:id="@+id/goToUsingMaterial"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    landptf:iconDrawable="@drawable/wuliaoshiyong"
+                    landptf:textCharacter="物料使用"
+                    landptf:textColor="@color/text_first_color"/>
+
+                <!--物料采购-->
+                <com.sx.common_base.view.ButtonExtendM
+                    android:id="@+id/goToMaterialPurchase"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    landptf:iconDrawable="@drawable/wuliaocaigou"
+                    landptf:textCharacter="物料采购"
+                    landptf:textColor="@color/text_first_color"/>
+
+
+                <!--物料库存-->
+                <com.sx.common_base.view.ButtonExtendM
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    landptf:iconDrawable="@drawable/wuliaokucun"
+                    landptf:textCharacter="物料库存"
+                    landptf:textColor="@color/text_first_color"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/gray_line_7"
+                android:background="@color/white"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="劳动力"
+                android:textSize="@dimen/content_third_title_size"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"/>
+
+            <View
+                style="@style/gray_line_7"
+                android:background="@color/white"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="@dimen/dp_5">
+                <!--工人信息-->
+                <com.sx.common_base.view.ButtonExtendM
+                    android:id="@+id/goToWorkerInformation"
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    landptf:iconDrawable="@drawable/gongrenxinxi"
+                    landptf:textCharacter="工人信息"
+                    landptf:textColor="@color/text_first_color"/>
+
+                <!--考勤统计-->
+                <com.sx.common_base.view.ButtonExtendM
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    landptf:iconDrawable="@drawable/kaoqintongji"
+                    landptf:textCharacter="考勤统计"
+                    landptf:textColor="@color/text_first_color"/>
+
+                <!--违规违纪-->
+                <com.sx.common_base.view.ButtonExtendM
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    landptf:iconDrawable="@drawable/weiguiweiji"
+                    landptf:textCharacter="违规违纪"
+                    landptf:textColor="@color/text_first_color"/>
+
+
+                <!--劳动力计划-->
+                <com.sx.common_base.view.ButtonExtendM
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    landptf:iconDrawable="@drawable/laodongjihua"
+                    landptf:textCharacter="劳动力计划"
+                    landptf:textColor="@color/text_first_color"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/gray_line_7"
+                android:background="@color/white"/>
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="生产进度"
+                android:textSize="@dimen/content_third_title_size"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_10"
+                android:paddingBottom="@dimen/dp_10"/>
+
+            <View
+                style="@style/gray_line_7"
+                android:background="@color/white"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="@dimen/dp_5">
+                <!--日计划-->
+                <com.sx.common_base.view.ButtonExtendM
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    landptf:iconDrawable="@drawable/rijihua"
+                    landptf:textCharacter="日计划"
+                    landptf:textColor="@color/text_first_color"/>
+
+                <!--周计划-->
+                <com.sx.common_base.view.ButtonExtendM
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    landptf:iconDrawable="@drawable/zhoujihua"
+                    landptf:textCharacter="周计划"
+                    landptf:textColor="@color/text_first_color"/>
+
+                <!--月计划-->
+                <com.sx.common_base.view.ButtonExtendM
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    landptf:iconDrawable="@drawable/yuejihua"
+                    landptf:textCharacter="月计划"
+                    landptf:textColor="@color/text_first_color"/>
+
+
+                <View
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/gray_line_7"
+                android:background="@color/white"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

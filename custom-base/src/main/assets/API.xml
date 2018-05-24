@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+    <!--
+        <Node
+            Key="API_GET_CHANNELS"                                                      //API KEY,对应APIKeys类下中定义变量
+            Expires="0"                                                                 //默认为0，暂时不开启缓存机制
+            NetType="POST"                                                              //默认为post，smartmall方案中，采用的是post 流数据
+            Token="false"                                                               //默认为false，
+            Scope="0"                                                                   //默认为0，作用于仅针对该接口下某一条特定cachekey的缓存
+            CacheMaxCount="50"                                                          //默认为50，表示该API下所有缓存条目最多有50条
+            MockHandler="com.maowo.custom.mock.shell.ChannelContentHandler"             //默认为空，表示没有模拟数据，如果有模拟数据，则实现router 模块下的 MockHandler 接口，统一存储在custom模块下的com.maowo.custom.mock.moduleName包下
+            Url="${indexUrl}/client/get_channels.json"/>                                //带API主机占位符的url地址
+    -->
+
+
+
+
+
+    <Node
+        Key="API_GET_UPDATEDICT"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/v4/Util/updateDict"/>
+
+    <Node
+        Key="API_GET_MAIN_PAGE"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/v4/Home/index"/>
+
+
+    <Node
+        Key="API_GET_CENTER_PAGE"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/v4/User/home"/>
+
+    <!--经销商登录-->
+    <Node
+        Key="API_GET_LOGIN_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/login"/>
+
+    <!--经销商登出-->
+    <Node
+        Key="API_LOGIN_OUT_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/logout"/>
+
+
+    <!--注册-->
+    <Node
+        Key="API_GET_REGISTER_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/register"/>
+
+    <!--注册-->
+    <Node
+        Key="API_GET_DEALER_REGISTER_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/business/register"/>
+
+
+    <!--忘记密码校验验证码-->
+    <Node
+        Key="API_VERIFY_PHONE_MESSAGE_CODE_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/checkCode"/>
+
+    <!--获取短信验证码-->
+    <Node
+        Key="API_GET_PHONE_MESSAGE_CODE_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/message/send"/>
+
+
+    <!--忘记密码-->
+    <Node
+        Key="API_FORGETPASSWORD_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/updatePwd"/>
+
+    <!--经销商修改密码-->
+    <Node
+        Key="API_UPDATEPASSWORD_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/restPwd"/>
+
+    <!--业务员修改密码-->
+    <Node
+        Key="API_UPDATEPASSWORD_SALE_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesMember/salesMember/restPwd"/>
+
+    <!--供应商修改密码-->
+    <Node
+        Key="API_UPDATEPASSWORD_SUPPLIER_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/business/restPwd"/>
+
+
+
+    <!--获取地区-->
+    <Node
+        Key="API_GET_AREA_LISR"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/area/list"/>
+
+    <!--获取站点-->
+    <Node
+        Key="API_GET_SITE_LISR"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/site/list"/>
+
+    <!--上传头像 API_UPLOAD_HEAF_IMAGE-->
+    <Node
+        Key="API_UPLOAD_HEAF_IMAGE"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/updateHeadImage"/>
+
+
+    <!--经销商首页-->
+    <Node
+        Key="API_DEALER_INDEX"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/homePage/index"/>
+
+    <!--修改真实姓名-->
+    <Node
+        Key="API_EDIT_NAME"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/editName"/>
+
+
+    <!--上传文件-->
+    <Node
+        Key="API_UPLOAD_FILE"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/upload"/>
+
+    <!--上传多张-->
+    <Node
+        Key="API_UPLOAD_FILES"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/uploadFiles"/>
+
+    <!--获取消息列表-->
+    <Node
+        Key="API_GET_MEAASGE_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/sysMessage/list"/>
+
+
+    <!--消息详情-->
+    <Node
+        Key="API_GET_MESSAGE_DETAIL_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/sysMessage/detail"/>
+
+
+    <!--更新经销商个人中心头像-->
+    <Node
+        Key="API_MY_UPDATE_AVATAR_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/updateHeadImage"/>
+
+    <!--地址列表-->
+    <Node
+        Key="API_ADDRESS_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/receiver/list"/>
+
+    <!--添加地址-->
+    <Node
+        Key="API_SAVE_RECEIVER_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/receiver/add"/>
+
+    <!--修改地址-->
+    <Node
+        Key="API_UPDATE_RECEIVER_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/receiver/edit"/>
+
+
+    <!--根据ID删除地址-->
+    <Node
+        Key="API_DELETE_ADDRESS_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/receiver/delete"/>
+
+    <!--设置默认地址-->
+    <Node
+        Key="API_SET_RECEIVERDEFAULT_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/receiver/isDefault"/>
+
+
+    <!--店铺/产品  分类列表-->
+    <Node
+        Key="API_PRODUCT_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/findProductList"/>
+
+    <!--商品总分类-->
+    <Node
+        Key="API_PRODUCT_INDEX_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/product_category/index"/>
+
+    <!--商品搜索-->
+    <Node
+        Key="API_PRODUCT_SEARCH_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/shopping/mobile/product/search"/>
+
+    <!--商品详情-->
+    <Node
+        Key="API_PRODUCT_DETAIL_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/product/detail"/>
+
+    <!--新增发票-->
+    <Node
+        Key="API_ADD_TICKET_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/shopping/mobile/member/taxTicket/save_taxTicket"/>
+
+    <!--发票管理-->
+    <Node
+        Key="API_TICKET_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/shopping/mobile/member/taxTicket/myTaxTicketList"/>
+
+    <!--查看发票-->
+    <Node
+        Key="API_QUERY_TICKET_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/shopping/mobile/member/taxTicket/query_taxTicket"/>
+
+    <!--删除发票-->
+    <Node
+        Key="API_DELETE_TICKET_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/shopping/mobile/member/taxTicket/delete_taxTicket"/>
+
+    <!--设置默认发票-->
+    <Node
+        Key="API_SET_DEFAULT_TICKET_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/shopping/mobile/member/taxTicket/set_taxDefault"/>
+
+    <!--会员中心-->
+    <Node
+        Key="API_MEMBER_INDEX_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/shopping/mobile/member/index/member_index"/>
+
+    <!--商城首页-->
+    <Node
+        Key="API_INDEX_INDEX_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/v4/Mall/home"/>
+
+    <!--商品收藏列表-->
+    <Node
+        Key="API_FAVORITE_PRODUCT_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/productFavorite/list"/>
+
+    <!--商品收藏-->
+    <Node
+        Key="API_PRODUCT_FAVORITE_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/productFavorite/add"/>
+
+
+    <!--商品收藏或删除-->
+    <Node
+        Key="API_PRODUCT_FAVORITE_OR_DEL_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/productFavorite/productAddOrDel"/>
+
+
+    <!--取消商品收藏-->
+    <Node
+        Key="API_CANCEL_FAVORITE_PRODUCT_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/productFavorite/delete"/>
+
+
+    <!--订单列表-->
+    <Node
+        Key="API_ORDER_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/findOrderList"/>
+
+    <!--退换货订单列表-->
+    <Node
+        Key="API_ORDER_EXCHANGE_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/returnApply/returnsApplyList"/>
+
+
+    <!--退换货订单详情-->
+    <Node
+        Key="API_ORDER_EXCHANGE_DETAIL_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/returnApply/detail"/>
+
+
+
+    <!--退换货申请订单列表-->
+    <Node
+        Key="API_ORDER_APPLY_EXCHANGE_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/findReturnsOrderList"/>
+
+    <!--添加退换货申请订单-->
+    <Node
+        Key="API_ORDER_EXCHANGE_ADD_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/returnApply/add"/>
+
+    <!--添加物流信息-->
+    <Node
+        Key="API_ADD_SHIP_COMPANY_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/returnApply/save_logisticsInfo"/>
+
+
+
+    <!--添加退换货申请订单提交-->
+    <Node
+        Key="API_ORDER_EXCHANGE_ADD_SUBMIT_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/returnApply/returnsApply"/>
+
+
+
+    <!--订单查看-->
+    <Node
+        Key="API_ORDER_VIEW_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/shopping/mobile/member/order/view"/>
+
+    <Node
+        Key="API_PRODUCT_EVALUATE_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/shopping/mobile/review/list"/>
+
+    <!-- 加入购物车 -->
+    <Node
+        Key="API_CART_ADD"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/cart/add"/>
+
+    <!-- 购物车信息 -->
+    <Node
+        Key="API_CART_INFO"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/cart/info"/>
+
+    <!--移除购物车-->
+    <Node
+        Key="API_CART_REMOVE"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/cart/remove"/>
+
+    <!--修改购物车-->
+    <Node
+        Key="API_CART_MODIFY"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/cart/modify"/>
+
+    <!--清空购物车-->
+    <Node
+        Key="API_CART_CLEAR"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/shopping/mobile/cart/clear"/>
+
+    <!--结算购物车-->
+    <Node
+        Key="API_CART_CHECK_OUT"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/order/checkout"/>
+
+    <!--创建普通订单-->
+    <Node
+        Key="API_ORDER_CREATE_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/create"/>
+
+
+    <!--经销商订单支付-->
+    <Node
+        Key="API_PAYMENT_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/payment"/>
+
+
+
+    <!--订单支付提交-->
+    <Node
+        Key="API_PAYMENT_SUBMIT_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/payment/paymentSubmit"/>
+
+    <!--取消订单-->
+    <Node
+        Key="API_ORDER_CANCEL_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/shopping/mobile/member/order/cancel"/>
+
+    <!--确认收货-->
+    <Node
+        Key="API_ORDER_RECEIVE_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/receive"/>
+
+    <!--订单取消-->
+    <Node
+        Key="API_ORDER_CANCEL_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/cancel"/>
+
+    <!--延长收货-->
+    <Node
+        Key="API_ORDER_DELAY_RECEIVE_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/shopping/mobile/member/order/delayReceive"/>
+
+    <!--订单详情-->
+    <Node
+        Key="API_ORDER_DETAIL_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/orderView"/>
+
+    <!--待审核订单详情-->
+    <Node
+        Key="API_ORDER_REVIEW_DETAIL_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/shopping/mobile/member/orderReview/view"/>
+
+    <!--待审核订单：审核-->
+    <Node
+        Key="API_ORDER_REVIEW_CHECK_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/shopping/mobile/member/orderReview/check"/>
+
+    <!--公司信息-->
+    <Node
+        Key="API_COMPANY_INFO_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/memberCenter"/>
+
+    <!--公司信息-->
+    <Node
+        Key="API_COMPANY_INFO_SAVE_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/companyInfo"/>
+
+
+    <!-- 供求信息列表 -->
+    <Node
+        Key="API_GET_DEMAND_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/demand/list"/>
+
+    <!-- 新增供求信息 -->
+    <Node
+        Key="API_ADD_DEMAND_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/demand/add"/>
+
+    <!-- 修改供求信息 -->
+    <Node
+        Key="API_EDIT_DEMAND_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/demand/edit"/>
+
+    <!-- 删除供求信息 -->
+    <Node
+        Key="API_DELETE_DEMAND_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/demand/delete"/>
+
+
+
+
+
+
+    <!--                          业务员                          -->
+
+    <!-- 首页 -->
+    <Node
+        Key="API_SALESMAN_LIST_INDEX_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesMember/statistic/memberOrderStatistic"/>
+
+    <!-- 商品分类排行 -->
+    <Node
+        Key="API_SALESMAN_CHART_INDEX_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesMember/statistic/productCategoryStatistic"/>
+
+
+    <!-- 商品详情 -->
+    <Node
+        Key="API_SALESMEMBER_PRODUCT_DETAIL_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesMember/member/detail"/>
+
+
+
+    <!-- 个人中心 -->
+    <Node
+        Key="API_SALESMAN_CENTER_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesMember/salesMember/salesMemberCenter"/>
+
+    <!-- 提现记录 -->
+    <Node
+        Key="API_SALESMAN_WITHDRAL_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/withdrawalsApply/list"/>
+
+    <!-- 添加提现申请 -->
+    <Node
+        Key="API_SALESMAN_WITHDRAW_ADD_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/withdrawalsApply/add"/>
+
+
+    <!-- 更新头像 -->
+    <Node
+        Key="API_UPDATE_HEAD_IMAGE_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesMember/salesMember/updateHeadImage"/>
+
+
+    <!-- 业务员发展的经销商列表 -->
+    <Node
+        Key="API_SALESMAN_SALESMAN_LIST"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesMember/member/list"/>
+
+
+    <!--拜访列表 -->
+    <Node
+        Key="API_SALESMAN_VISIT_RECORD_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesMember/visitRecord/list"/>
+
+    <!--区域经理拜访列表 -->
+    <Node
+        Key="API_SALESMAN_MANAGER_VISIT_RECORD_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesMember/visitRecord/managerList"/>
+
+    <!--区域经理获取业务员列表 -->
+    <Node
+        Key="API_SALESMAN_MANAGER_SALES_LIST"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesMember/salesMember/findSalesMemberList"/>
+
+    <!--区域经理-业务员客户列表 -->
+    <Node
+        Key="API_SALESMAN_MANAGER_CUSTOM_LIST"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesMember/member/managerlist"/>
+
+    <!--新增拜访 -->
+    <Node
+        Key="API_SALESMAN_ADD_VISIT_RECORD_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesMember/visitRecord/add"/>
+
+    <!--新增拜访后记录 -->
+    <Node
+        Key="API_SALESMAN_ADD_AFTER_VISIT_RECORD_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesMember/visitRecord/visitAfterRecordAdd"/>
+
+    <!--新增拜访后记录 -->
+    <Node
+        Key="API_GET_SALES_ORDER_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesOrder/findOrderList"/>
+
+    <!--申请特价 -->
+    <Node
+        Key="API_ADD_SPECIAL_PRICE_RECORD"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/specialPriceRecord/add"/>
+
+    <!--个性签名 -->
+    <Node
+        Key="API_EDIT_SIGNATURE_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesMember/salesMember/editSignature"/>
+
+    <!--业绩表现和历史记录 -->
+    <Node
+        Key="API_SALESMAN_ACHIEVEMENT_AND_HISTORY_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesMember/statistic/achievementAndHistory"/>
+
+
+    <!--今日统计 -->
+    <Node
+        Key="API_SALESMAN_TODAY_STATISTIC_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/salesMember/statistic/todayStatistic"/>
+
+
+
+    <!--                          供应商                          -->
+    <!-- 首页-获取订单金额 -->
+    <Node
+        Key="API_SUPPLIER_INDEX_GET_ORDER_AMOUNT_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/businessIndex/orderAmount"/>
+
+    <!-- 首页-获取订单金额 -->
+    <Node
+        Key="API_SUPPLIER_INDEX_GET_PAYMENT_AMOUNT_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/businessIndex/paymentAmount"/>
+
+    <!-- 首页-获取折线图数据 -->
+    <Node
+        Key="API_SUPPLIER_INDEX_BUSINESS_TREND_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/businessIndex/businessTrend"/>
+
+    <!-- 首页-获取排行数据 -->
+    <Node
+        Key="API_SUPPLIER_INDEX_ORDER_PRODUCT_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/businessIndex/orderProduct"/>
+
+
+
+
+    <!-- 个人中心 -->
+    <Node
+        Key="API_SUPPLIER_CENTER_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/business/businessService"/>
+
+    <!-- 更新头像 -->
+    <Node
+        Key="API_SUPPLIER_UPDATE_HEAD_IMAGE_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/business/updateHeadImage"/>
+
+    <!-- 修改公司信息 -->
+    <Node
+        Key="API_SUPPLIER_SAVE_COMPANY_INFO_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/business/companyInfo"/>
+
+    <!-- 商品列表 -->
+    <Node
+        Key="API_SUPPLIER_GOOD_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/bproduct/list"/>
+
+    <!-- 商品列表 -->
+    <Node
+        Key="API_SUPPLIER_GOOD_DETAIL_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/bproduct/detail"/>
+
+    <!-- 订单列表 -->
+    <Node
+        Key="API_SUPPLIER_ORDER_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/business/purchase/list"/>
+
+    <!-- 订单详情 -->
+    <Node
+        Key="API_SUPPLIER_ORDER_DETAIL_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/business/purchase/detail"/>
+
+
+    <!-- 订单详情-商品清单 -->
+    <Node
+        Key="API_SUPPLIER_ORDER_DETAIL_GOOD_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/business/purchase/itemList"/>
+
+    <!-- 订单详情-发货记录 -->
+    <Node
+        Key="API_SUPPLIER_ORDER_DETAIL_SHIP_LIST_URL"
+        Expires="0"
+        NetType="POST"
+        Token="false"
+        Scope="0"
+        CacheMaxCount="0"
+        MockHandler=""
+        Url="${indexUrl}/api/business/purchase/shipping"/>
+
+
+
+
+</Container>

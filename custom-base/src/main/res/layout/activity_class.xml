@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/root_bg_color">
+
+    <include layout="@layout/inc_common_top_bar"
+        />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ListView
+            android:scrollbars="none"
+            android:id="@+id/list_menu"
+            android:layout_width="0dp"
+            android:layout_weight="11"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:layout_height="match_parent" />
+
+        <ListView
+            android:id="@+id/listview"
+            android:scrollbars="none"
+            android:layout_width="0dp"
+            android:layout_weight="39"
+            android:layout_height="match_parent"
+            android:background="@color/no_color"
+            android:listSelector="@null"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:stretchMode="spacingWidth"/>
+    </LinearLayout>
+
+</LinearLayout>

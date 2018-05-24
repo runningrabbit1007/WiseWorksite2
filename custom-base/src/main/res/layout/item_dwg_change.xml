@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:padding="@dimen/dp_10">
+
+        <include layout="@layout/item_top_content" />
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/sp15">
+
+            <TextView
+                android:id="@+id/item_dwg_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_first_color"
+                android:textSize="@dimen/content_second_title_size"
+                />
+
+
+            <TextView
+                android:id="@+id/item_dwg_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_red_color"
+                android:textSize="@dimen/content_third_title_size"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_dwg_unit"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/content_third_title_size"
+            android:textColor="@color/text_third_color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_3">
+
+            <TextView
+                android:id="@+id/item_dwg_consignee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/content_third_title_size"
+                android:textColor="@color/text_third_color"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/item_dwg_sure_btn"
+                style="@style/blueWhiteBtn"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/gray_line_7"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

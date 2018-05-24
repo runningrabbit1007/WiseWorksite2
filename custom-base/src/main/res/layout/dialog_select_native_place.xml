@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/width_match_height_wrap" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/wrap_content"
+            android:layout_centerInParent="true"
+            android:text="选择地区" />
+
+        <ImageView
+            android:id="@+id/user_cancle"
+            style="@style/wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/dialog_delete_image" />
+    </RelativeLayout>
+
+    <View style="@style/gray_deep_line" />
+
+    <LinearLayout style="@style/width_match_height_wrap" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="省" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="市" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="区" />
+    </LinearLayout>
+
+    <View style="@style/gray_deep_line" />
+
+    <LinearLayout
+        style="@style/match_parent" >
+        <ListView
+            android:id="@+id/provice_lv"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+        <ListView
+            android:id="@+id/city_lv"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:scrollbars="none" />
+
+        <ListView
+            android:id="@+id/area_lv"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

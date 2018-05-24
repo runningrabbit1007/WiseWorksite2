@@ -1,0 +1,1 @@
+include ':app', ':common-base', ':common-util', ':common-view', ':router', ':MPChartLib', ':custom-base', ':library'

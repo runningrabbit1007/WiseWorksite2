@@ -1,0 +1,44 @@
+import com.google.gson.stream.JsonReader
+import com.ffu365.config.ModuleConfigExtension
+import com.ffu365.utils.JSONUtil
+
+/*
+def getModuleSource(String name) {
+    JsonReader jsonReader = new JsonReader(new FileReader(project.getRootProject().getRootDir().absolutePath + File.separator + "test.json"));
+    Map modelMap = JSONUtil.parseJSON2Map(jsonReader);
+    return modelMap.get(name);
+}
+
+def initModuleConfig(Project project, def configModel) {
+    JsonReader jsonReader = new JsonReader(new FileReader(project.getRootProject().getRootDir().absolutePath + File.separator + "test.json"));
+    configModel = JSONUtil.parseJSON2Map(jsonReader);
+    project.config {
+        moduleName = configModel.moduleName
+        isApplication = configModel.isApplication
+        if (isApplication && configModel.appConfig != null){
+            appConfig.applicationId = configModel.appConfig.applicationId
+            appConfig.appVersion = configModel.appConfig.appVersion
+            appConfig.appVersionName = configModel.appConfig.appVersionName
+            appConfig.appName = configModel.appConfig.appName
+            appConfig.smartMallId = configModel.appConfig.smartMallId
+            appConfig.smartBrandId = configModel.appConfig.smartBrandId
+            appConfig.apiEnv = configModel.appConfig.apiEnv
+            appConfig.productFlavor = configModel.appConfig.productFlavor
+            appConfig.buildType = configModel.appConfig.buildType
+        }
+
+        thirdPart.key = configModel.thirdPart.key
+        thirdPart.channel = configModel.thirdPart.channel
+
+        depMap = configModel.depMap
+    }
+}
+*/
+
+
+
+
+
+
+
+

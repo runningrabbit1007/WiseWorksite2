@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 单选框 -->
+    <declare-styleable name="ImageCheckBox">
+
+        <!-- 选择状态的background -->
+        <attr name="checkedBackground" format="reference" />
+        <!-- 没有选择的background -->
+        <attr name="unCheckedBackground" format="reference" />
+        <!-- 默认的状态 -->
+        <attr name="normalStatus" format="boolean" />
+        <!-- 是否可以点击 -->
+        <attr name="isCanClick" format="boolean" />
+
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/width_match_height_wrap" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_select_mode" />
+
+        <ImageView
+            android:id="@+id/user_cancle"
+            style="@style/wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/dialog_delete_image" />
+    </RelativeLayout>
+
+    <View style="@style/gray_deep_line" />
+
+    <TextView
+        android:id="@+id/image_depot"
+        style="@style/width_match_height_wrap"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/activity_select_photo" />
+
+    <View style="@style/gray_deep_line" />
+
+    <TextView
+        android:id="@+id/photo_camre"
+        style="@style/width_match_height_wrap"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/activity_select_camera" />
+
+</LinearLayout>

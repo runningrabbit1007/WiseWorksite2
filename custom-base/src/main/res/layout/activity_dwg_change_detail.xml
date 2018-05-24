@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dwg_change_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.sx.common_base.activity.project_maneger.DwgChangeDetailActivity">
+
+
+    <include layout="@layout/inc_common_top_bar"/>
+
+    <View
+        style="@style/gray_line_7"/>
+
+    <!--基本信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <View
+            style="@style/blue_line"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="基本信息"
+            android:textColor="@color/text_first_color"
+            android:textSize="@dimen/content_second_title_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="审核中…"
+            android:textColor="@color/text_green_color"
+            android:textSize="@dimen/content_second_title_size"/>
+    </LinearLayout>
+
+    <View
+        style="@style/gray_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+        <!--发文编号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="发文编号："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_third_title_size"
+                android:textColor="@color/text_third_color"/>
+
+
+            <TextView
+                android:id="@+id/content_no"
+                android:text="NOO1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_second_title_size"
+                android:textColor="@color/text_first_color"/>
+
+        </LinearLayout>
+
+
+        <!--变更主题-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_6">
+
+            <TextView
+                android:text="变更主题："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_third_title_size"
+                android:textColor="@color/text_third_color"/>
+
+
+            <TextView
+                android:id="@+id/change_title"
+                android:text="NOO1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_second_title_size"
+                android:textColor="@color/text_first_color"/>
+
+            <TextView
+                android:id="@+id/change_count"
+                android:text="（2分）"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_second_title_size"
+                android:textColor="@color/text_red_color"/>
+
+        </LinearLayout>
+
+        <!--变更时间-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_6">
+
+            <TextView
+                android:text="变更时间："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_third_title_size"
+                android:textColor="@color/text_third_color"/>
+
+
+            <TextView
+                android:id="@+id/change_time"
+                android:text="2018-16-16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_second_title_size"
+                android:textColor="@color/text_first_color"/>
+
+        </LinearLayout>
+
+        <!--发往单位-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_6">
+
+            <TextView
+                android:text="发往单位："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_third_title_size"
+                android:textColor="@color/text_third_color"/>
+
+
+            <TextView
+                android:id="@+id/receive_unit"
+                android:text="2018-16-16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_second_title_size"
+                android:textColor="@color/text_first_color"/>
+
+        </LinearLayout>
+
+        <!--收件人-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_6">
+
+            <TextView
+                android:text="收件人："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_third_title_size"
+                android:textColor="@color/text_third_color"/>
+
+
+            <TextView
+                android:id="@+id/receiver"
+                android:text="2018-16-16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_second_title_size"
+                android:textColor="@color/text_first_color"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/gray_line_3"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/gray_line_7"/>
+
+    <!--变更信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <View
+            style="@style/blue_line"/>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="变更信息"
+            android:textColor="@color/text_first_color"
+            android:textSize="@dimen/content_second_title_size" />
+    </LinearLayout>
+
+    <View
+        style="@style/gray_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+        <!--审核人员-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="审核人员："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_third_title_size"
+                android:textColor="@color/text_third_color"/>
+
+
+            <TextView
+                android:id="@+id/check_person"
+                android:text="NOO1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_second_title_size"
+                android:textColor="@color/text_first_color"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:text="发布单位："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_third_title_size"
+                android:textColor="@color/text_third_color"/>
+
+
+            <TextView
+                android:id="@+id/publish_unit"
+                android:text="NOO1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_second_title_size"
+                android:textColor="@color/text_first_color"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <TextView
+                android:text="审核时间："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_third_title_size"
+                android:textColor="@color/text_third_color"/>
+
+
+            <TextView
+                android:id="@+id/check_time"
+                android:text="NOO1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_second_title_size"
+                android:textColor="@color/text_first_color"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_15">
+
+            <TextView
+                android:text="审核时间："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_third_title_size"
+                android:textColor="@color/text_third_color"/>
+
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_5"
+                android:id="@+id/check_reason"
+                android:text="NOO1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/content_second_title_size"
+                android:textColor="@color/text_first_color"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:text="图纸附件"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10"
+        android:textSize="@dimen/content_third_title_size"
+        android:textColor="@color/text_third_color"/>
+
+    <com.sx.common_base.view.ImplantGridView
+        android:id="@+id/imgGradView"
+        android:numColumns="4"
+        android:verticalSpacing="@dimen/dp_10"
+        android:horizontalSpacing="@dimen/dp_10"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+
+
+
+</LinearLayout>

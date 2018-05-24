@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">智慧工地</string>
+
+
+    <!--拍照-->
+    <string name="activity_select_mode">Select</string>
+    <string name="activity_select_photo">Gallery</string>
+    <string name="activity_select_camera">Camera</string>
+
+    <string name="ok">确 认</string>
+    <string name="cancel">取 消</string>
+
+    <!--日期选择轮子的title-->
+    <string name="query_time_select_title">请选择日期</string>
+
+    <string name="begin_at">开始于\n</string>
+    <string name="end_at">结束于\n</string>
+
+    <string name="time_start_larger_end_not_allowed">The start time is not greater than the end time</string>
+
+
+    <!-- 下拉刷新 -->
+    <string name="xlistview_header_hint_normal">Pull down to refresh</string>
+    <string name="xlistview_header_hint_ready">Release to refresh</string>
+    <string name="xlistview_header_hint_loading">Loading</string>
+    <string name="xlistview_header_last_time">Last update : </string>
+    <string name="xlistview_footer_hint_normal">Click for more</string>
+    <string name="xlistview_footer_hint_ready">Release to load more</string>
+    <string name="xlistview_footer_hint_nodate">No data</string>
+    <string name="xlistview_footer_hint_finish">All load has been completed</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="activity_salesman_extract_cash_list">Withdraw Cash List</string>
+    <string name="asec_details">Details</string>
+    <string name="asec_status">Status</string>
+    <string name="asec_withdraw">Withdraw Cash</string>
+    <string name="ased_amount">Cash Withdrawal Amount</string>
+    <string name="ased_availabel_amount">Available Commission</string>
+    <string name="ased_confirm">Confirm</string>
+    <string name="ased_commission">Commission</string>
+    <string name="ased_frozen_amount">Frozen Amount</string>
+    <string name="ased_useful_amount">Available Commission</string>
+    <string name="ased_withdraw">Withdraw</string>
+    <string name="address">No effective position</string>
+    <string name="ased_withdraw_detail">Detail</string>
+    <string name="activity_payment_amount_toast_3">Do you want to give up payment ?</string>
+    <string name="more">Pull up the details of the picture and text</string>
+    <string name="yourself">Yourself</string>
+    <string name="asc_visit_record_add">Post Visit Record</string>
+    <string name="activity_add_address_str">Add The Address</string>
+    <string name="activity_map_setting_str">Please set - position information (open the location service)</string>
+    <string name="activity_map_setting">To set up</string>
+    <string name="activity_pic_setting_two">picture</string>
+    <string name="activity_pic_setting_one">You can only choose the most</string>
+    <string name="activity_pic_setting_edit">The current is not an edit state</string>
+
+
+</resources>

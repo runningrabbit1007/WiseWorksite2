@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_catagory"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:paddingLeft="12dp"
+        android:background="@color/background_color"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_third_color"
+        android:textSize="@dimen/content_third_title_size" />
+
+    <include layout="@layout/item_teamwork_manager_child"/>
+
+    <!--<TextView
+        android:id="@+id/tv_city_name"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:textColor="@color/text_first_color"
+        android:textSize="@dimen/content_first_title_size" />-->
+
+    <!--<View
+        style="@style/gray_line"
+        android:layout_marginRight="24dp"/>-->
+</LinearLayout>
